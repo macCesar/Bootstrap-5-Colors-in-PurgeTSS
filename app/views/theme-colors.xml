@@ -1,0 +1,63 @@
+<Alloy>
+  <View class="mt-2 vertical">
+    <View class="mx-2 vertical">
+      <Label id="bootstrap" class="w-screen text-3xl font-bold">Color</Label>
+      <Label class="w-full h-auto text-xl bg-transparent">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</Label>
+    </View>
+
+    <View class="mx-2 mt-4 vertical">
+      <Label id="colors" class="w-screen text-xl font-bold">Theme colors</Label>
+      <Label class="w-full h-auto text-base bg-transparent">We use a subset of all colors to create a smaller color palette for generating color schemes.</Label>
+    </View>
+
+    <View class="grid w-auto mt-1">
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-primary">
+          <Label class="text-white">Primary</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-secondary">
+          <Label class="text-white">Secondary</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-success">
+          <Label class="text-white">Success</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-danger">
+          <Label class="text-white">Danger</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-warning">
+          <Label class="text-dark">Warning</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-info">
+          <Label class="text-dark">Info</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-light">
+          <Label class="text-dark">Light</Label>
+        </View>
+      </View>
+
+      <View class="grid-cols-2">
+        <View class="w-screen h-12 gap-1 bg-dark">
+          <Label class="text-white">Dark</Label>
+        </View>
+      </View>
+    </View>
+  </View>
+</Alloy>

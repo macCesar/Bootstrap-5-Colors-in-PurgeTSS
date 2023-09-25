@@ -1,0 +1,24 @@
+<Alloy>
+  <View id="alert" class="mt-4 mb-2 vertical">
+    <View class="mx-2 vertical">
+      <Label class="w-screen text-xl font-bold">Alerts</Label>
+      <Label class="w-full h-auto text-base bg-transparent">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</Label>
+    </View>
+
+    <Label class="w-screen mx-2 mt-2 alert-primary h-14 alert" text="   A simple primary alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-secondary h-14 alert" text="   A simple secondary alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-success h-14 alert" text="   A simple success alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-danger h-14 alert" text="   A simple danger alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-warning h-14 alert" text="   A simple warning alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-info h-14 alert" text="   A simple info alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-light h-14 alert" text="   A simple light alert—check it out!" />
+
+    <Label class="w-screen mx-2 mt-2 alert-dark h-14 alert" text="   A simple dark alert—check it out!" />
+  </View>
+</Alloy>
