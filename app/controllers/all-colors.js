@@ -1,3 +1,3 @@
 (function constructor() {
-	Alloy.Collections.colors.fetch();
-}());
+  Alloy.Collections.colors.fetch()
+}())

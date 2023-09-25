@@ -1,7 +1,12 @@
 // ./purgetss/config.js
+
+// Bootstrap 5 Alpha 2 | Theme Colors
+// https://v5.getbootstrap.com/docs/5.0/customize/color/#theme-colors
+
 module.exports = {
   purge: {
     mode: 'all',
+    method: 'sync', // set how to execute auto-purging: sync or async
 
     // These options are passed directly to PurgeTSS
     options: {
@@ -247,4 +252,4 @@ module.exports = {
     },
     fontFamily: { mono: 'Courier' }
   }
-};
+}

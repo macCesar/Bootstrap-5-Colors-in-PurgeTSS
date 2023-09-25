@@ -1,1 +1,1 @@
-$.mainWindow.open();
+$.mainWindow.open()
