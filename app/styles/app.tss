@@ -8,6 +8,7 @@
 'ScrollView[platform=android]': { scrollType: 'vertical' }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
+'Window[platform=android]': { theme: 'Theme.Titanium.DayNight' }
 'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
 
 // Custom Styles
