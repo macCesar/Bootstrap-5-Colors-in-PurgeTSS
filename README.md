@@ -17,7 +17,7 @@ To get started with this Sample App and explore the custom color palette, follow
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone git@github.com:macCesar/BT5-Colors-in-PurgeTSS.git
+   git clone git@github.com:macCesar/Bootstrap-5-Colors-in-PurgeTSS.git
    ```
 
 2. Install the necessary dependencies for your Titanium project.
