@@ -4,7 +4,7 @@
 // Tailwind-like styles
 // Generated with PurgeTSS
 // https://github.com/macCesar/purgeTSS
-// config.js file updated on: Sun Sep 24 2023 19:36:24 GMT-0500 (hora de verano central)
+// config.js file updated on: Mon Sep 25 2023 22:36:51 GMT-0500 (hora de verano central)
 
 // Ti Elements
 // Property: View
@@ -21,26 +21,26 @@
 
 // Property: ScrollView
 // Description: A view that contains a horizontally and/or vertically-scrollable region of content.
-'ScrollView': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.SIZE }
+'ScrollView': { contentHeight: Ti.UI.SIZE, contentWidth: Ti.UI.FILL }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
 
 // Property: Window
 // Description: The Window is an empty drawing surface or container.
-'Window': { barColor: '#7952b3', backButtonTitle: '', backgroundColor: '#ffffff' }
-'Window[platform=ios]': { translucent: false, navTintColor: '#ffffff', titleAttributes: { color: '#ffffff' } }
+'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
+'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
 'Window[platform=android]': { softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
 
 // Custom Classes
-'.alert': { borderWidth: '3px', borderRadius: 4 }
+'.alert': { borderRadius: 4, borderWidth: '3px' }
 '.alert-heading': { font: { fontSize: 24 } }
-'.alert-primary': { color: '#084298', backgroundColor: '#cfe2ff', borderColor: '#b6d4fe' }
-'.alert-secondary': { color: '#41464b', backgroundColor: '#e2e3e5', borderColor: '#d3d6d8' }
-'.alert-success': { color: '#0f5132', backgroundColor: '#d1e7dd', borderColor: '#badbcc' }
-'.alert-danger': { color: '#842029', backgroundColor: '#f8d7da', borderColor: '#f5c2c7' }
-'.alert-warning': { color: '#664d03', backgroundColor: '#fff3cd', borderColor: '#ffecb5' }
-'.alert-info': { color: '#055160', backgroundColor: '#cff4fc', borderColor: '#b6effb' }
-'.alert-light': { color: '#636464', backgroundColor: '#fefefe', borderColor: '#fdfdfe' }
-'.alert-dark': { color: '#141619', backgroundColor: '#d3d3d4', borderColor: '#bcbebf' }
+'.alert-primary': { backgroundColor: '#cfe2ff', borderColor: '#b6d4fe', color: '#084298', textColor: '#084298' }
+'.alert-secondary': { backgroundColor: '#e2e3e5', borderColor: '#d3d6d8', color: '#41464b', textColor: '#41464b' }
+'.alert-success': { backgroundColor: '#d1e7dd', borderColor: '#badbcc', color: '#0f5132', textColor: '#0f5132' }
+'.alert-danger': { backgroundColor: '#f8d7da', borderColor: '#f5c2c7', color: '#842029', textColor: '#842029' }
+'.alert-warning': { backgroundColor: '#fff3cd', borderColor: '#ffecb5', color: '#664d03', textColor: '#664d03' }
+'.alert-info': { backgroundColor: '#cff4fc', borderColor: '#b6effb', color: '#055160', textColor: '#055160' }
+'.alert-light': { backgroundColor: '#fefefe', borderColor: '#fdfdfe', color: '#636464', textColor: '#636464' }
+'.alert-dark': { backgroundColor: '#d3d3d4', borderColor: '#bcbebf', color: '#141619', textColor: '#141619' }
 // End of Custom Classes
 
 // Utilities for controlling an element's margin.
@@ -2940,6 +2940,7 @@
 '.from-info': { backgroundGradient: { colors: [ '#000dcaf0', '#0dcaf0' ] } }
 '.from-light': { backgroundGradient: { colors: [ '#00f8f9fa', '#f8f9fa' ] } }
 '.from-dark': { backgroundGradient: { colors: [ '#00212529', '#212529' ] } }
+'.from-white': { backgroundGradient: { colors: [ '#00FFFFFF', '#FFFFFF' ] } }
 '.from-transparent': { backgroundGradient: { colors: [ 'transparent', 'transparent' ] } }
 '.from-blue-100': { backgroundGradient: { colors: [ '#00cfe2ff', '#cfe2ff' ] } }
 '.from-blue-200': { backgroundGradient: { colors: [ '#009ec5fe', '#9ec5fe' ] } }
@@ -3062,6 +3063,7 @@
 '.to-info': { backgroundGradient: { colors: [ '#0dcaf0' ] } }
 '.to-light': { backgroundGradient: { colors: [ '#f8f9fa' ] } }
 '.to-dark': { backgroundGradient: { colors: [ '#212529' ] } }
+'.to-white': { backgroundGradient: { colors: [ '#FFFFFF' ] } }
 '.to-transparent': { backgroundGradient: { colors: [ 'transparent' ] } }
 '.to-blue-100': { backgroundGradient: { colors: [ '#cfe2ff' ] } }
 '.to-blue-200': { backgroundGradient: { colors: [ '#9ec5fe' ] } }
@@ -3184,6 +3186,7 @@
 '.bg-selected-from-info': { backgroundSelectedGradient: { colors: [ '#000dcaf0', '#0dcaf0' ] } }
 '.bg-selected-from-light': { backgroundSelectedGradient: { colors: [ '#00f8f9fa', '#f8f9fa' ] } }
 '.bg-selected-from-dark': { backgroundSelectedGradient: { colors: [ '#00212529', '#212529' ] } }
+'.bg-selected-from-white': { backgroundSelectedGradient: { colors: [ '#00FFFFFF', '#FFFFFF' ] } }
 '.bg-selected-from-transparent': { backgroundSelectedGradient: { colors: [ 'transparent', 'transparent' ] } }
 '.bg-selected-from-blue-100': { backgroundSelectedGradient: { colors: [ '#00cfe2ff', '#cfe2ff' ] } }
 '.bg-selected-from-blue-200': { backgroundSelectedGradient: { colors: [ '#009ec5fe', '#9ec5fe' ] } }
@@ -3306,6 +3309,7 @@
 '.bg-selected-to-info': { backgroundSelectedGradient: { colors: [ '#0dcaf0' ] } }
 '.bg-selected-to-light': { backgroundSelectedGradient: { colors: [ '#f8f9fa' ] } }
 '.bg-selected-to-dark': { backgroundSelectedGradient: { colors: [ '#212529' ] } }
+'.bg-selected-to-white': { backgroundSelectedGradient: { colors: [ '#FFFFFF' ] } }
 '.bg-selected-to-transparent': { backgroundSelectedGradient: { colors: [ 'transparent' ] } }
 '.bg-selected-to-blue-100': { backgroundSelectedGradient: { colors: [ '#cfe2ff' ] } }
 '.bg-selected-to-blue-200': { backgroundSelectedGradient: { colors: [ '#9ec5fe' ] } }
@@ -3428,6 +3432,7 @@
 '.text-info': { color: '#0dcaf0', textColor: '#0dcaf0' }
 '.text-light': { color: '#f8f9fa', textColor: '#f8f9fa' }
 '.text-dark': { color: '#212529', textColor: '#212529' }
+'.text-white': { color: '#ffffff', textColor: '#ffffff' }
 '.text-transparent': { color: 'transparent', textColor: 'transparent' }
 '.text-blue-100': { color: '#cfe2ff', textColor: '#cfe2ff' }
 '.text-blue-200': { color: '#9ec5fe', textColor: '#9ec5fe' }
@@ -3539,7 +3544,6 @@
 '.text-gray-800': { color: '#343a40', textColor: '#343a40' }
 '.text-gray-900': { color: '#212529', textColor: '#212529' }
 '.text-gray': { color: '#adb5bd', textColor: '#adb5bd' }
-'.text-white': { color: '#ffffff', textColor: '#ffffff' }
 '.text-black': { color: '#000000', textColor: '#000000' }
 '.text-body': { color: '#212529', textColor: '#212529' }
 '.text-muted': { color: '#6c757d', textColor: '#6c757d' }
@@ -3556,6 +3560,7 @@
 '.placeholder-info': { hintTextColor: '#0dcaf0' }
 '.placeholder-light': { hintTextColor: '#f8f9fa' }
 '.placeholder-dark': { hintTextColor: '#212529' }
+'.placeholder-white': { hintTextColor: '#FFFFFF' }
 '.placeholder-transparent': { hintTextColor: 'transparent' }
 '.placeholder-blue-100': { hintTextColor: '#cfe2ff' }
 '.placeholder-blue-200': { hintTextColor: '#9ec5fe' }
@@ -3678,6 +3683,7 @@
 '.tint-info': { tint: '#0dcaf0', tintColor: '#0dcaf0' }
 '.tint-light': { tint: '#f8f9fa', tintColor: '#f8f9fa' }
 '.tint-dark': { tint: '#212529', tintColor: '#212529' }
+'.tint-white': { tint: '#FFFFFF', tintColor: '#FFFFFF' }
 '.tint-transparent': { tint: 'transparent', tintColor: 'transparent' }
 '.tint-blue-100': { tint: '#cfe2ff', tintColor: '#cfe2ff' }
 '.tint-blue-200': { tint: '#9ec5fe', tintColor: '#9ec5fe' }
@@ -3800,6 +3806,7 @@
 '.title-attributes-info': { titleAttributes: { color: '#0dcaf0' } }
 '.title-attributes-light': { titleAttributes: { color: '#f8f9fa' } }
 '.title-attributes-dark': { titleAttributes: { color: '#212529' } }
+'.title-attributes-white': { titleAttributes: { color: '#FFFFFF' } }
 '.title-attributes-transparent': { titleAttributes: { color: 'transparent' } }
 '.title-attributes-blue-100': { titleAttributes: { color: '#cfe2ff' } }
 '.title-attributes-blue-200': { titleAttributes: { color: '#9ec5fe' } }
@@ -3922,6 +3929,7 @@
 '.title-attributes-shadow-info': { titleAttributes: { shadow: { color: '#0dcaf0' } } }
 '.title-attributes-shadow-light': { titleAttributes: { shadow: { color: '#f8f9fa' } } }
 '.title-attributes-shadow-dark': { titleAttributes: { shadow: { color: '#212529' } } }
+'.title-attributes-shadow-white': { titleAttributes: { shadow: { color: '#FFFFFF' } } }
 '.title-attributes-shadow-transparent': { titleAttributes: { shadow: { color: 'transparent' } } }
 '.title-attributes-shadow-blue-100': { titleAttributes: { shadow: { color: '#cfe2ff' } } }
 '.title-attributes-shadow-blue-200': { titleAttributes: { shadow: { color: '#9ec5fe' } } }
@@ -4056,6 +4064,7 @@
 '.bg-info': { backgroundColor: '#0dcaf0' }
 '.bg-light': { backgroundColor: '#f8f9fa' }
 '.bg-dark': { backgroundColor: '#212529' }
+'.bg-white': { backgroundColor: '#FFFFFF' }
 '.bg-transparent': { backgroundColor: 'transparent' }
 '.bg-blue-100': { backgroundColor: '#cfe2ff' }
 '.bg-blue-200': { backgroundColor: '#9ec5fe' }
@@ -4179,6 +4188,7 @@
 '.bg-disabled-info': { backgroundDisabledColor: '#0dcaf0' }
 '.bg-disabled-light': { backgroundDisabledColor: '#f8f9fa' }
 '.bg-disabled-dark': { backgroundDisabledColor: '#212529' }
+'.bg-disabled-white': { backgroundDisabledColor: '#FFFFFF' }
 '.bg-disabled-transparent': { backgroundDisabledColor: 'transparent' }
 '.bg-disabled-blue-100': { backgroundDisabledColor: '#cfe2ff' }
 '.bg-disabled-blue-200': { backgroundDisabledColor: '#9ec5fe' }
@@ -4301,6 +4311,7 @@
 '.bg-focused-info': { backgroundFocusedColor: '#0dcaf0' }
 '.bg-focused-light': { backgroundFocusedColor: '#f8f9fa' }
 '.bg-focused-dark': { backgroundFocusedColor: '#212529' }
+'.bg-focused-white': { backgroundFocusedColor: '#FFFFFF' }
 '.bg-focused-transparent': { backgroundFocusedColor: 'transparent' }
 '.bg-focused-blue-100': { backgroundFocusedColor: '#cfe2ff' }
 '.bg-focused-blue-200': { backgroundFocusedColor: '#9ec5fe' }
@@ -4468,6 +4479,7 @@
 '.bg-selected-info': { backgroundSelectedColor: '#0dcaf0' }
 '.bg-selected-light': { backgroundSelectedColor: '#f8f9fa' }
 '.bg-selected-dark': { backgroundSelectedColor: '#212529' }
+'.bg-selected-white': { backgroundSelectedColor: '#FFFFFF' }
 '.bg-selected-transparent': { backgroundSelectedColor: 'transparent' }
 '.bg-selected-blue-100': { backgroundSelectedColor: '#cfe2ff' }
 '.bg-selected-blue-200': { backgroundSelectedColor: '#9ec5fe' }
@@ -4630,6 +4642,7 @@
 '.border-info': { borderColor: '#0dcaf0' }
 '.border-light': { borderColor: '#f8f9fa' }
 '.border-dark': { borderColor: '#212529' }
+'.border-white': { borderColor: '#FFFFFF' }
 '.border-transparent': { borderColor: 'transparent' }
 '.border-blue-100': { borderColor: '#cfe2ff' }
 '.border-blue-200': { borderColor: '#9ec5fe' }
@@ -5102,6 +5115,7 @@
 '.pull-bg-info': { pullBackgroundColor: '#0dcaf0' }
 '.pull-bg-light': { pullBackgroundColor: '#f8f9fa' }
 '.pull-bg-dark': { pullBackgroundColor: '#212529' }
+'.pull-bg-white': { pullBackgroundColor: '#FFFFFF' }
 '.pull-bg-transparent': { pullBackgroundColor: 'transparent' }
 '.pull-bg-blue-100': { pullBackgroundColor: '#cfe2ff' }
 '.pull-bg-blue-200': { pullBackgroundColor: '#9ec5fe' }
@@ -5414,6 +5428,7 @@
 '.touch-feedback-info': { touchFeedbackColor: '#0dcaf0' }
 '.touch-feedback-light': { touchFeedbackColor: '#f8f9fa' }
 '.touch-feedback-dark': { touchFeedbackColor: '#212529' }
+'.touch-feedback-white': { touchFeedbackColor: '#FFFFFF' }
 '.touch-feedback-transparent': { touchFeedbackColor: 'transparent' }
 '.touch-feedback-blue-100': { touchFeedbackColor: '#cfe2ff' }
 '.touch-feedback-blue-200': { touchFeedbackColor: '#9ec5fe' }
@@ -5537,6 +5552,7 @@
 '.view-shadow-info': { viewShadowColor: '#0dcaf0' }
 '.view-shadow-light': { viewShadowColor: '#f8f9fa' }
 '.view-shadow-dark': { viewShadowColor: '#212529' }
+'.view-shadow-white': { viewShadowColor: '#FFFFFF' }
 '.view-shadow-transparent': { viewShadowColor: 'transparent' }
 '.view-shadow-blue-100': { viewShadowColor: '#cfe2ff' }
 '.view-shadow-blue-200': { viewShadowColor: '#9ec5fe' }
@@ -5941,6 +5957,7 @@
 '.colors-info': { colors: '#0dcaf0' }
 '.colors-light': { colors: '#f8f9fa' }
 '.colors-dark': { colors: '#212529' }
+'.colors-white': { colors: '#FFFFFF' }
 '.colors-transparent': { colors: 'transparent' }
 '.colors-blue-100': { colors: '#cfe2ff' }
 '.colors-blue-200': { colors: '#9ec5fe' }
@@ -6297,6 +6314,7 @@
 '.info': { color: '#0dcaf0' }
 '.light': { color: '#f8f9fa' }
 '.dark': { color: '#212529' }
+'.white': { color: '#FFFFFF' }
 '.transparent': { color: 'transparent' }
 '.blue-100': { color: '#cfe2ff' }
 '.blue-200': { color: '#9ec5fe' }
@@ -6459,6 +6477,7 @@
 '.light-info': { lightColor: '#0dcaf0' }
 '.light-color': { lightColor: '#f8f9fa' }
 '.light-dark': { lightColor: '#212529' }
+'.light-white': { lightColor: '#FFFFFF' }
 '.light-transparent': { lightColor: 'transparent' }
 '.light-blue-100': { lightColor: '#cfe2ff' }
 '.light-blue-200': { lightColor: '#9ec5fe' }
@@ -8084,6 +8103,7 @@
 '.indicator-info': { indicatorColor: '#0dcaf0' }
 '.indicator-light': { indicatorColor: '#f8f9fa' }
 '.indicator-dark': { indicatorColor: '#212529' }
+'.indicator-white': { indicatorColor: '#FFFFFF' }
 '.indicator-transparent': { indicatorColor: 'transparent' }
 '.indicator-blue-100': { indicatorColor: '#cfe2ff' }
 '.indicator-blue-200': { indicatorColor: '#9ec5fe' }
@@ -8576,6 +8596,7 @@
 '.bar-info': { barColor: '#0dcaf0' }
 '.bar-light': { barColor: '#f8f9fa' }
 '.bar-dark': { barColor: '#212529' }
+'.bar-white': { barColor: '#FFFFFF' }
 '.bar-transparent': { barColor: 'transparent' }
 '.bar-blue-100': { barColor: '#cfe2ff' }
 '.bar-blue-200': { barColor: '#9ec5fe' }
@@ -8699,6 +8720,7 @@
 '.content-scrim-info': { contentScrimColor: '#0dcaf0' }
 '.content-scrim-light': { contentScrimColor: '#f8f9fa' }
 '.content-scrim-dark': { contentScrimColor: '#212529' }
+'.content-scrim-white': { contentScrimColor: '#FFFFFF' }
 '.content-scrim-transparent': { contentScrimColor: 'transparent' }
 '.content-scrim-blue-100': { contentScrimColor: '#cfe2ff' }
 '.content-scrim-blue-200': { contentScrimColor: '#9ec5fe' }
@@ -8889,6 +8911,7 @@
 '.navigation-icon-info': { navigationIconColor: '#0dcaf0' }
 '.navigation-icon-light': { navigationIconColor: '#f8f9fa' }
 '.navigation-icon-dark': { navigationIconColor: '#212529' }
+'.navigation-icon-white': { navigationIconColor: '#FFFFFF' }
 '.navigation-icon-transparent': { navigationIconColor: 'transparent' }
 '.navigation-icon-blue-100': { navigationIconColor: '#cfe2ff' }
 '.navigation-icon-blue-200': { navigationIconColor: '#9ec5fe' }
@@ -9213,6 +9236,7 @@
 '.hint-text-info': { hintTextColor: '#0dcaf0' }
 '.hint-text-light': { hintTextColor: '#f8f9fa' }
 '.hint-text-dark': { hintTextColor: '#212529' }
+'.hint-text-white': { hintTextColor: '#FFFFFF' }
 '.hint-text-transparent': { hintTextColor: 'transparent' }
 '.hint-text-blue-100': { hintTextColor: '#cfe2ff' }
 '.hint-text-blue-200': { hintTextColor: '#9ec5fe' }
@@ -9811,6 +9835,7 @@
 '.disabled-info': { disabledColor: '#0dcaf0' }
 '.disabled-light': { disabledColor: '#f8f9fa' }
 '.disabled-dark': { disabledColor: '#212529' }
+'.disabled-white': { disabledColor: '#FFFFFF' }
 '.disabled-transparent': { disabledColor: 'transparent' }
 '.disabled-blue-100': { disabledColor: '#cfe2ff' }
 '.disabled-blue-200': { disabledColor: '#9ec5fe' }
@@ -9939,6 +9964,7 @@
 '.selected-info': { selectedColor: '#0dcaf0' }
 '.selected-light': { selectedColor: '#f8f9fa' }
 '.selected-dark': { selectedColor: '#212529' }
+'.selected-white': { selectedColor: '#FFFFFF' }
 '.selected-transparent': { selectedColor: 'transparent' }
 '.selected-blue-100': { selectedColor: '#cfe2ff' }
 '.selected-blue-200': { selectedColor: '#9ec5fe' }
@@ -10061,6 +10087,7 @@
 '.shadow-info': { shadowColor: '#0dcaf0' }
 '.shadow-light': { shadowColor: '#f8f9fa' }
 '.shadow-dark': { shadowColor: '#212529' }
+'.shadow-white': { shadowColor: '#FFFFFF' }
 '.shadow-transparent': { shadowColor: 'transparent' }
 '.shadow-blue-100': { shadowColor: '#cfe2ff' }
 '.shadow-blue-200': { shadowColor: '#9ec5fe' }
@@ -10258,6 +10285,7 @@
 '.selected-text-info': { selectedTextColor: '#0dcaf0' }
 '.selected-text-light': { selectedTextColor: '#f8f9fa' }
 '.selected-text-dark': { selectedTextColor: '#212529' }
+'.selected-text-white': { selectedTextColor: '#FFFFFF' }
 '.selected-text-transparent': { selectedTextColor: 'transparent' }
 '.selected-text-blue-100': { selectedTextColor: '#cfe2ff' }
 '.selected-text-blue-200': { selectedTextColor: '#9ec5fe' }
@@ -10381,6 +10409,7 @@
 '.selected-button-info': { selectedButtonColor: '#0dcaf0' }
 '.selected-button-light': { selectedButtonColor: '#f8f9fa' }
 '.selected-button-dark': { selectedButtonColor: '#212529' }
+'.selected-button-white': { selectedButtonColor: '#FFFFFF' }
 '.selected-button-transparent': { selectedButtonColor: 'transparent' }
 '.selected-button-blue-100': { selectedButtonColor: '#cfe2ff' }
 '.selected-button-blue-200': { selectedButtonColor: '#9ec5fe' }
@@ -10586,6 +10615,7 @@
 '.image-touch-feedback-info': { imageTouchFeedbackColor: '#0dcaf0' }
 '.image-touch-feedback-light': { imageTouchFeedbackColor: '#f8f9fa' }
 '.image-touch-feedback-dark': { imageTouchFeedbackColor: '#212529' }
+'.image-touch-feedback-white': { imageTouchFeedbackColor: '#FFFFFF' }
 '.image-touch-feedback-transparent': { imageTouchFeedbackColor: 'transparent' }
 '.image-touch-feedback-blue-100': { imageTouchFeedbackColor: '#cfe2ff' }
 '.image-touch-feedback-blue-200': { imageTouchFeedbackColor: '#9ec5fe' }
@@ -10925,6 +10955,7 @@
 '.highlighted-info': { highlightedColor: '#0dcaf0' }
 '.highlighted-light': { highlightedColor: '#f8f9fa' }
 '.highlighted-dark': { highlightedColor: '#212529' }
+'.highlighted-white': { highlightedColor: '#FFFFFF' }
 '.highlighted-transparent': { highlightedColor: 'transparent' }
 '.highlighted-blue-100': { highlightedColor: '#cfe2ff' }
 '.highlighted-blue-200': { highlightedColor: '#9ec5fe' }
@@ -11091,6 +11122,7 @@
 '.selected-bg-info': { selectedBackgroundColor: '#0dcaf0' }
 '.selected-bg-light': { selectedBackgroundColor: '#f8f9fa' }
 '.selected-bg-dark': { selectedBackgroundColor: '#212529' }
+'.selected-bg-white': { selectedBackgroundColor: '#FFFFFF' }
 '.selected-bg-transparent': { selectedBackgroundColor: 'transparent' }
 '.selected-bg-blue-100': { selectedBackgroundColor: '#cfe2ff' }
 '.selected-bg-blue-200': { selectedBackgroundColor: '#9ec5fe' }
@@ -11232,6 +11264,7 @@
 '.subtitle-info': { subtitleColor: '#0dcaf0' }
 '.subtitle-light': { subtitleColor: '#f8f9fa' }
 '.subtitle-dark': { subtitleColor: '#212529' }
+'.subtitle-white': { subtitleColor: '#FFFFFF' }
 '.subtitle-transparent': { subtitleColor: 'transparent' }
 '.subtitle-blue-100': { subtitleColor: '#cfe2ff' }
 '.subtitle-blue-200': { subtitleColor: '#9ec5fe' }
@@ -11355,6 +11388,7 @@
 '.selected-subtitle-info': { selectedSubtitleColor: '#0dcaf0' }
 '.selected-subtitle-light': { selectedSubtitleColor: '#f8f9fa' }
 '.selected-subtitle-dark': { selectedSubtitleColor: '#212529' }
+'.selected-subtitle-white': { selectedSubtitleColor: '#FFFFFF' }
 '.selected-subtitle-transparent': { selectedSubtitleColor: 'transparent' }
 '.selected-subtitle-blue-100': { selectedSubtitleColor: '#cfe2ff' }
 '.selected-subtitle-blue-200': { selectedSubtitleColor: '#9ec5fe' }
@@ -11692,6 +11726,7 @@
 '.separator-info': { separatorColor: '#0dcaf0' }
 '.separator-light': { separatorColor: '#f8f9fa' }
 '.separator-dark': { separatorColor: '#212529' }
+'.separator-white': { separatorColor: '#FFFFFF' }
 '.separator-transparent': { separatorColor: 'transparent' }
 '.separator-blue-100': { separatorColor: '#cfe2ff' }
 '.separator-blue-200': { separatorColor: '#9ec5fe' }
@@ -11833,6 +11868,7 @@
 '.results-bg-info': { resultsBackgroundColor: '#0dcaf0' }
 '.results-bg-light': { resultsBackgroundColor: '#f8f9fa' }
 '.results-bg-dark': { resultsBackgroundColor: '#212529' }
+'.results-bg-white': { resultsBackgroundColor: '#FFFFFF' }
 '.results-bg-transparent': { resultsBackgroundColor: 'transparent' }
 '.results-bg-blue-100': { resultsBackgroundColor: '#cfe2ff' }
 '.results-bg-blue-200': { resultsBackgroundColor: '#9ec5fe' }
@@ -11956,6 +11992,7 @@
 '.results-separator-info': { resultsSeparatorColor: '#0dcaf0' }
 '.results-separator-light': { resultsSeparatorColor: '#f8f9fa' }
 '.results-separator-dark': { resultsSeparatorColor: '#212529' }
+'.results-separator-white': { resultsSeparatorColor: '#FFFFFF' }
 '.results-separator-transparent': { resultsSeparatorColor: 'transparent' }
 '.results-separator-blue-100': { resultsSeparatorColor: '#cfe2ff' }
 '.results-separator-blue-200': { resultsSeparatorColor: '#9ec5fe' }
@@ -12492,6 +12529,7 @@
 '.date-time-info': { dateTimeColor: '#0dcaf0' }
 '.date-time-light': { dateTimeColor: '#f8f9fa' }
 '.date-time-dark': { dateTimeColor: '#212529' }
+'.date-time-white': { dateTimeColor: '#FFFFFF' }
 '.date-time-transparent': { dateTimeColor: 'transparent' }
 '.date-time-blue-100': { dateTimeColor: '#cfe2ff' }
 '.date-time-blue-200': { dateTimeColor: '#9ec5fe' }
@@ -12653,6 +12691,7 @@
 '.track-tint-info': { trackTintColor: '#0dcaf0' }
 '.track-tint-light': { trackTintColor: '#f8f9fa' }
 '.track-tint-dark': { trackTintColor: '#212529' }
+'.track-tint-white': { trackTintColor: '#FFFFFF' }
 '.track-tint-transparent': { trackTintColor: 'transparent' }
 '.track-tint-blue-100': { trackTintColor: '#cfe2ff' }
 '.track-tint-blue-200': { trackTintColor: '#9ec5fe' }
@@ -12975,6 +13014,7 @@
 '.current-page-indicator-info': { currentPageIndicatorColor: '#0dcaf0' }
 '.current-page-indicator-light': { currentPageIndicatorColor: '#f8f9fa' }
 '.current-page-indicator-dark': { currentPageIndicatorColor: '#212529' }
+'.current-page-indicator-white': { currentPageIndicatorColor: '#FFFFFF' }
 '.current-page-indicator-transparent': { currentPageIndicatorColor: 'transparent' }
 '.current-page-indicator-blue-100': { currentPageIndicatorColor: '#cfe2ff' }
 '.current-page-indicator-blue-200': { currentPageIndicatorColor: '#9ec5fe' }
@@ -13098,6 +13138,7 @@
 '.paging-control-info': { pagingControlColor: '#0dcaf0' }
 '.paging-control-light': { pagingControlColor: '#f8f9fa' }
 '.paging-control-dark': { pagingControlColor: '#212529' }
+'.paging-control-white': { pagingControlColor: '#FFFFFF' }
 '.paging-control-transparent': { pagingControlColor: 'transparent' }
 '.paging-control-blue-100': { pagingControlColor: '#cfe2ff' }
 '.paging-control-blue-200': { pagingControlColor: '#9ec5fe' }
@@ -13260,6 +13301,7 @@
 '.page-indicator-info': { pageIndicatorColor: '#0dcaf0' }
 '.page-indicator-light': { pageIndicatorColor: '#f8f9fa' }
 '.page-indicator-dark': { pageIndicatorColor: '#212529' }
+'.page-indicator-white': { pageIndicatorColor: '#FFFFFF' }
 '.page-indicator-transparent': { pageIndicatorColor: 'transparent' }
 '.page-indicator-blue-100': { pageIndicatorColor: '#cfe2ff' }
 '.page-indicator-blue-200': { pageIndicatorColor: '#9ec5fe' }
@@ -13465,6 +13507,7 @@
 '.icon-info': { iconColor: '#0dcaf0' }
 '.icon-light': { iconColor: '#f8f9fa' }
 '.icon-dark': { iconColor: '#212529' }
+'.icon-white': { iconColor: '#FFFFFF' }
 '.icon-transparent': { iconColor: 'transparent' }
 '.icon-blue-100': { iconColor: '#cfe2ff' }
 '.icon-blue-200': { iconColor: '#9ec5fe' }
@@ -13762,6 +13805,7 @@
 '.on-tint-info': { onTintColor: '#0dcaf0' }
 '.on-tint-light': { onTintColor: '#f8f9fa' }
 '.on-tint-dark': { onTintColor: '#212529' }
+'.on-tint-white': { onTintColor: '#FFFFFF' }
 '.on-tint-transparent': { onTintColor: 'transparent' }
 '.on-tint-blue-100': { onTintColor: '#cfe2ff' }
 '.on-tint-blue-200': { onTintColor: '#9ec5fe' }
@@ -13885,6 +13929,7 @@
 '.thumb-tint-info': { thumbTintColor: '#0dcaf0' }
 '.thumb-tint-light': { thumbTintColor: '#f8f9fa' }
 '.thumb-tint-dark': { thumbTintColor: '#212529' }
+'.thumb-tint-white': { thumbTintColor: '#FFFFFF' }
 '.thumb-tint-transparent': { thumbTintColor: 'transparent' }
 '.thumb-tint-blue-100': { thumbTintColor: '#cfe2ff' }
 '.thumb-tint-blue-200': { thumbTintColor: '#9ec5fe' }
@@ -14013,6 +14058,7 @@
 '.badge-info': { badgeColor: '#0dcaf0' }
 '.badge-light': { badgeColor: '#f8f9fa' }
 '.badge-dark': { badgeColor: '#212529' }
+'.badge-white': { badgeColor: '#FFFFFF' }
 '.badge-transparent': { badgeColor: 'transparent' }
 '.badge-blue-100': { badgeColor: '#cfe2ff' }
 '.badge-blue-200': { badgeColor: '#9ec5fe' }
@@ -14136,6 +14182,7 @@
 '.badge-bg-info': { badgeBackgroundColor: '#0dcaf0' }
 '.badge-bg-light': { badgeBackgroundColor: '#f8f9fa' }
 '.badge-bg-dark': { badgeBackgroundColor: '#212529' }
+'.badge-bg-white': { badgeBackgroundColor: '#FFFFFF' }
 '.badge-bg-transparent': { badgeBackgroundColor: 'transparent' }
 '.badge-bg-blue-100': { badgeBackgroundColor: '#cfe2ff' }
 '.badge-bg-blue-200': { badgeBackgroundColor: '#9ec5fe' }
@@ -14259,6 +14306,7 @@
 '.badge-text-info': { badgeTextColor: '#0dcaf0' }
 '.badge-text-light': { badgeTextColor: '#f8f9fa' }
 '.badge-text-dark': { badgeTextColor: '#212529' }
+'.badge-text-white': { badgeTextColor: '#FFFFFF' }
 '.badge-text-transparent': { badgeTextColor: 'transparent' }
 '.badge-text-blue-100': { badgeTextColor: '#cfe2ff' }
 '.badge-text-blue-200': { badgeTextColor: '#9ec5fe' }
@@ -14393,6 +14441,7 @@
 '.active-tint-info': { activeTintColor: '#0dcaf0' }
 '.active-tint-light': { activeTintColor: '#f8f9fa' }
 '.active-tint-dark': { activeTintColor: '#212529' }
+'.active-tint-white': { activeTintColor: '#FFFFFF' }
 '.active-tint-transparent': { activeTintColor: 'transparent' }
 '.active-tint-blue-100': { activeTintColor: '#cfe2ff' }
 '.active-tint-blue-200': { activeTintColor: '#9ec5fe' }
@@ -14516,6 +14565,7 @@
 '.title-info': { titleColor: '#0dcaf0' }
 '.title-light': { titleColor: '#f8f9fa' }
 '.title-dark': { titleColor: '#212529' }
+'.title-white': { titleColor: '#FFFFFF' }
 '.title-transparent': { titleColor: 'transparent' }
 '.title-blue-100': { titleColor: '#cfe2ff' }
 '.title-blue-200': { titleColor: '#9ec5fe' }
@@ -14639,6 +14689,7 @@
 '.active-title-info': { activeTitleColor: '#0dcaf0' }
 '.active-title-light': { activeTitleColor: '#f8f9fa' }
 '.active-title-dark': { activeTitleColor: '#212529' }
+'.active-title-white': { activeTitleColor: '#FFFFFF' }
 '.active-title-transparent': { activeTitleColor: 'transparent' }
 '.active-title-blue-100': { activeTitleColor: '#cfe2ff' }
 '.active-title-blue-200': { activeTitleColor: '#9ec5fe' }
@@ -14772,6 +14823,7 @@
 '.nav-tint-info': { navTintColor: '#0dcaf0' }
 '.nav-tint-light': { navTintColor: '#f8f9fa' }
 '.nav-tint-dark': { navTintColor: '#212529' }
+'.nav-tint-white': { navTintColor: '#FFFFFF' }
 '.nav-tint-transparent': { navTintColor: 'transparent' }
 '.nav-tint-blue-100': { navTintColor: '#cfe2ff' }
 '.nav-tint-blue-200': { navTintColor: '#9ec5fe' }
@@ -14960,6 +15012,7 @@
 '.tabs-bg-info': { tabsBackgroundColor: '#0dcaf0' }
 '.tabs-bg-light': { tabsBackgroundColor: '#f8f9fa' }
 '.tabs-bg-dark': { tabsBackgroundColor: '#212529' }
+'.tabs-bg-white': { tabsBackgroundColor: '#FFFFFF' }
 '.tabs-bg-transparent': { tabsBackgroundColor: 'transparent' }
 '.tabs-bg-blue-100': { tabsBackgroundColor: '#cfe2ff' }
 '.tabs-bg-blue-200': { tabsBackgroundColor: '#9ec5fe' }
@@ -15095,6 +15148,7 @@
 '.tabs-bg-selected-info': { tabsBackgroundSelectedColor: '#0dcaf0' }
 '.tabs-bg-selected-light': { tabsBackgroundSelectedColor: '#f8f9fa' }
 '.tabs-bg-selected-dark': { tabsBackgroundSelectedColor: '#212529' }
+'.tabs-bg-selected-white': { tabsBackgroundSelectedColor: '#FFFFFF' }
 '.tabs-bg-selected-transparent': { tabsBackgroundSelectedColor: 'transparent' }
 '.tabs-bg-selected-blue-100': { tabsBackgroundSelectedColor: '#cfe2ff' }
 '.tabs-bg-selected-blue-200': { tabsBackgroundSelectedColor: '#9ec5fe' }
@@ -15512,6 +15566,7 @@
 '.keyboard-toolbar-info': { keyboardToolbarColor: '#0dcaf0' }
 '.keyboard-toolbar-light': { keyboardToolbarColor: '#f8f9fa' }
 '.keyboard-toolbar-dark': { keyboardToolbarColor: '#212529' }
+'.keyboard-toolbar-white': { keyboardToolbarColor: '#FFFFFF' }
 '.keyboard-toolbar-transparent': { keyboardToolbarColor: 'transparent' }
 '.keyboard-toolbar-blue-100': { keyboardToolbarColor: '#cfe2ff' }
 '.keyboard-toolbar-blue-200': { keyboardToolbarColor: '#9ec5fe' }
@@ -15804,6 +15859,7 @@
 '.subtitle-text-info': { subtitleTextColor: '#0dcaf0' }
 '.subtitle-text-light': { subtitleTextColor: '#f8f9fa' }
 '.subtitle-text-dark': { subtitleTextColor: '#212529' }
+'.subtitle-text-white': { subtitleTextColor: '#FFFFFF' }
 '.subtitle-text-transparent': { subtitleTextColor: 'transparent' }
 '.subtitle-text-blue-100': { subtitleTextColor: '#cfe2ff' }
 '.subtitle-text-blue-200': { subtitleTextColor: '#9ec5fe' }
@@ -15927,6 +15983,7 @@
 '.title-text-info': { titleTextColor: '#0dcaf0' }
 '.title-text-light': { titleTextColor: '#f8f9fa' }
 '.title-text-dark': { titleTextColor: '#212529' }
+'.title-text-white': { titleTextColor: '#FFFFFF' }
 '.title-text-transparent': { titleTextColor: 'transparent' }
 '.title-text-blue-100': { titleTextColor: '#cfe2ff' }
 '.title-text-blue-200': { titleTextColor: '#9ec5fe' }
@@ -16438,6 +16495,7 @@
 '.status-bar-bg-info': { statusBarBackgroundColor: '#0dcaf0' }
 '.status-bar-bg-light': { statusBarBackgroundColor: '#f8f9fa' }
 '.status-bar-bg-dark': { statusBarBackgroundColor: '#212529' }
+'.status-bar-bg-white': { statusBarBackgroundColor: '#FFFFFF' }
 '.status-bar-bg-transparent': { statusBarBackgroundColor: 'transparent' }
 '.status-bar-bg-blue-100': { statusBarBackgroundColor: '#cfe2ff' }
 '.status-bar-bg-blue-200': { statusBarBackgroundColor: '#9ec5fe' }

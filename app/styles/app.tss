@@ -4,23 +4,23 @@
 
 // Ti Elements
 'Label': { font: { fontSize: 14 } }
-'ScrollView': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.SIZE }
+'ScrollView': { contentHeight: Ti.UI.SIZE, contentWidth: Ti.UI.FILL }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
-'Window': { barColor: '#7952b3', backButtonTitle: '', backgroundColor: '#ffffff' }
+'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
 'Window[platform=android]': { softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
-'Window[platform=ios]': { translucent: false, navTintColor: '#ffffff', titleAttributes: { color: '#ffffff' } }
+'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
 
 // Custom Styles
-'.alert': { borderWidth: '3px', borderRadius: 4 }
-'.alert-danger': { color: '#842029', backgroundColor: '#f8d7da', borderColor: '#f5c2c7' }
-'.alert-dark': { color: '#141619', backgroundColor: '#d3d3d4', borderColor: '#bcbebf' }
-'.alert-info': { color: '#055160', backgroundColor: '#cff4fc', borderColor: '#b6effb' }
-'.alert-light': { color: '#636464', backgroundColor: '#fefefe', borderColor: '#fdfdfe' }
-'.alert-primary': { color: '#084298', backgroundColor: '#cfe2ff', borderColor: '#b6d4fe' }
-'.alert-secondary': { color: '#41464b', backgroundColor: '#e2e3e5', borderColor: '#d3d6d8' }
-'.alert-success': { color: '#0f5132', backgroundColor: '#d1e7dd', borderColor: '#badbcc' }
-'.alert-warning': { color: '#664d03', backgroundColor: '#fff3cd', borderColor: '#ffecb5' }
+'.alert': { borderRadius: 4, borderWidth: '3px' }
+'.alert-danger': { backgroundColor: '#f8d7da', borderColor: '#f5c2c7', color: '#842029', textColor: '#842029' }
+'.alert-dark': { backgroundColor: '#d3d3d4', borderColor: '#bcbebf', color: '#141619', textColor: '#141619' }
+'.alert-info': { backgroundColor: '#cff4fc', borderColor: '#b6effb', color: '#055160', textColor: '#055160' }
+'.alert-light': { backgroundColor: '#fefefe', borderColor: '#fdfdfe', color: '#636464', textColor: '#636464' }
+'.alert-primary': { backgroundColor: '#cfe2ff', borderColor: '#b6d4fe', color: '#084298', textColor: '#084298' }
+'.alert-secondary': { backgroundColor: '#e2e3e5', borderColor: '#d3d6d8', color: '#41464b', textColor: '#41464b' }
+'.alert-success': { backgroundColor: '#d1e7dd', borderColor: '#badbcc', color: '#0f5132', textColor: '#0f5132' }
+'.alert-warning': { backgroundColor: '#fff3cd', borderColor: '#ffecb5', color: '#664d03', textColor: '#664d03' }
 
 // Main Styles
 '.bg-blue': { backgroundColor: '#0d6efd' }

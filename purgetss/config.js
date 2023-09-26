@@ -38,9 +38,9 @@ module.exports = {
       info: '#0dcaf0',
       light: '#f8f9fa',
       dark: '#212529',
+      white: '#FFFFFF',
       transparent: 'transparent',
       blue: {
-        default: '#0d6efd',
         100: '#cfe2ff',
         200: '#9ec5fe',
         300: '#6ea8fe',
@@ -49,10 +49,10 @@ module.exports = {
         600: '#0a58ca',
         700: '#084298',
         800: '#052c65',
-        900: '#031633'
+        900: '#031633',
+        default: '#0d6efd'
       },
       indigo: {
-        default: '#6610f2',
         100: '#e0cffc',
         200: '#c29ffa',
         300: '#a370f7',
@@ -61,10 +61,10 @@ module.exports = {
         600: '#520dc2',
         700: '#3d0a91',
         800: '#290661',
-        900: '#140330'
+        900: '#140330',
+        default: '#6610f2'
       },
       purple: {
-        default: '#6f42c1',
         100: '#e2d9f3',
         200: '#c5b3e6',
         300: '#a98eda',
@@ -73,10 +73,10 @@ module.exports = {
         600: '#59359a',
         700: '#432874',
         800: '#2c1a4d',
-        900: '#160d27'
+        900: '#160d27',
+        default: '#6f42c1'
       },
       pink: {
-        default: '#d63384',
         100: '#f7d6e6',
         200: '#efadce',
         300: '#e685b5',
@@ -85,10 +85,10 @@ module.exports = {
         600: '#ab296a',
         700: '#801f4f',
         800: '#561435',
-        900: '#2b0a1a'
+        900: '#2b0a1a',
+        default: '#d63384'
       },
       red: {
-        default: '#dc3545',
         100: '#f8d7da',
         200: '#f1aeb5',
         300: '#ea868f',
@@ -97,10 +97,10 @@ module.exports = {
         600: '#b02a37',
         700: '#842029',
         800: '#58151c',
-        900: '#2c0b0e'
+        900: '#2c0b0e',
+        default: '#dc3545'
       },
       orange: {
-        default: '#fd7e14',
         100: '#ffe5d0',
         200: '#fecba1',
         300: '#feb272',
@@ -109,10 +109,10 @@ module.exports = {
         600: '#ca6510',
         700: '#984c0c',
         800: '#653208',
-        900: '#331904'
+        900: '#331904',
+        default: '#fd7e14'
       },
       yellow: {
-        default: '#ffc107',
         100: '#fff3cd',
         200: '#ffe69c',
         300: '#ffda6a',
@@ -121,10 +121,10 @@ module.exports = {
         600: '#cc9a06',
         700: '#997404',
         800: '#664d03',
-        900: '#332701'
+        900: '#332701',
+        default: '#ffc107'
       },
       green: {
-        default: '#198754',
         100: '#d1e7dd',
         200: '#a3cfbb',
         300: '#75b798',
@@ -133,10 +133,10 @@ module.exports = {
         600: '#146c43',
         700: '#0f5132',
         800: '#0a3622',
-        900: '#051b11'
+        900: '#051b11',
+        default: '#198754'
       },
       teal: {
-        default: '#20c997',
         100: '#d2f4ea',
         200: '#a6e9d5',
         300: '#79dfc1',
@@ -145,10 +145,10 @@ module.exports = {
         600: '#1aa179',
         700: '#13795b',
         800: '#0d503c',
-        900: '#06281e'
+        900: '#06281e',
+        default: '#20c997'
       },
       cyan: {
-        default: '#0dcaf0',
         100: '#cff4fc',
         200: '#9eeaf9',
         300: '#6edff6',
@@ -157,10 +157,10 @@ module.exports = {
         600: '#0aa2c0',
         700: '#087990',
         800: '#055160',
-        900: '#032830'
+        900: '#032830',
+        default: '#0dcaf0'
       },
       gray: {
-        default: '#adb5bd',
         100: '#f8f9fa',
         200: '#e9ecef',
         300: '#dee2e6',
@@ -169,85 +169,65 @@ module.exports = {
         600: '#6c757d',
         700: '#495057',
         800: '#343a40',
-        900: '#212529'
+        900: '#212529',
+        default: '#adb5bd'
       }
     },
     Window: {
       default: {
-        barColor: '#7952b3',
         backButtonTitle: '',
-        backgroundColor: '#fff'
+        apply: 'bar-(#7952b3) bg-white'
       },
       ios: {
-        translucent: false,
-        navTintColor: '#fff',
-        titleAttributes: { color: '#fff' }
+        apply: 'translucent-false nav-tint-white title-attributes-white'
       },
       android: {
-        softKeyboardOnFocus: 'Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS'
+        apply: 'android:soft-keyboard-on-focus-show'
       }
     },
     ScrollView: {
       default: {
-        contentWidth: 'Ti.UI.FILL',
-        contentHeight: 'Ti.UI.SIZE'
+        apply: 'content-w-screen content-h-auto'
       },
       android: {
-        scrollType: 'vertical'
+        apply: 'scroll-type-vertical'
       }
     },
     Label: {
       default: {
-        font: { fontSize: 14 }
+        apply: 'text-sm'
       }
     },
     '.alert': {
       default: {
-        borderWidth: '3px',
-        borderRadius: '.25rem'
+        apply: 'border-(3px) rounded-2'
       },
       heading: {
-        font: { fontSize: '1.5rem' }
+        apply: 'text-2xl'
       },
       primary: {
-        color: '#084298',
-        backgroundColor: '#cfe2ff',
-        borderColor: '#b6d4fe',
+        apply: 'text-blue-700 bg-blue-100 border-(#b6d4fe)'
       },
       secondary: {
-        color: '#41464b',
-        backgroundColor: '#e2e3e5',
-        borderColor: '#d3d6d8',
+        apply: 'text-(#41464b) bg-(#e2e3e5) border-(#d3d6d8)'
       },
       success: {
-        color: '#0f5132',
-        backgroundColor: '#d1e7dd',
-        borderColor: '#badbcc',
+        apply: 'text-green-700 bg-green-100 border-(#badbcc)'
       },
       danger: {
-        color: '#842029',
-        backgroundColor: '#f8d7da',
-        borderColor: '#f5c2c7',
+        apply: 'text-red-700 bg-red-100 border-(#f5c2c7)'
       },
       warning: {
-        color: '#664d03',
-        backgroundColor: '#fff3cd',
-        borderColor: '#ffecb5',
+        apply: 'text-yellow-800 bg-yellow-100 border-(#ffecb5)'
       },
       info: {
-        color: '#055160',
-        backgroundColor: '#cff4fc',
-        borderColor: '#b6effb',
+        apply: 'text-cyan-800 bg-cyan-100 border-(#b6effb)'
       },
       light: {
-        color: '#636464',
-        backgroundColor: '#fefefe',
-        borderColor: '#fdfdfe',
+        apply: 'text-(#636464) bg-(#fefefe) border-(#fdfdfe)'
       },
       dark: {
-        color: '#141619',
-        backgroundColor: '#d3d3d4',
-        borderColor: '#bcbebf',
+        apply: 'text-(#141619) bg-(#d3d3d4) border-(#bcbebf)'
       }
     },
     fontFamily: { mono: 'Courier' }
