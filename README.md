@@ -32,7 +32,7 @@ To get started with this Sample App and explore the custom color palette, follow
 
 ## Resources
 
-- [Bootstrap 5 Color Palette Documentation](https://v5.getbootstrap.com/docs/5.0/customize/color/#theme-colors) - Refer to Bootstrap 5 documentation for additional information on theme colors.
+- [Bootstrap 5 Color Palette Documentation](https://getbootstrap.com/docs/5.2/customize/color/) - Refer to Bootstrap 5 documentation for additional information on theme colors.
 
 ## Contributing
 

@@ -180,9 +180,6 @@ module.exports = {
       },
       ios: {
         apply: 'translucent-false nav-tint-white title-attributes-white'
-      },
-      android: {
-        apply: 'android:soft-keyboard-on-focus-show'
       }
     },
     ScrollView: {

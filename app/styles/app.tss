@@ -8,7 +8,6 @@
 'ScrollView[platform=android]': { scrollType: 'vertical' }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
-'Window[platform=android]': { softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
 'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
 
 // Custom Styles

@@ -4,7 +4,7 @@
 // Tailwind-like styles
 // Generated with PurgeTSS
 // https://github.com/macCesar/purgeTSS
-// config.js file updated on: Mon Sep 25 2023 22:36:51 GMT-0500 (hora de verano central)
+// config.js file updated on: Tue Sep 26 2023 08:35:06 GMT-0500 (hora de verano central)
 
 // Ti Elements
 // Property: View
@@ -28,7 +28,6 @@
 // Description: The Window is an empty drawing surface or container.
 'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
 'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
-'Window[platform=android]': { softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
 
 // Custom Classes
 '.alert': { borderRadius: 4, borderWidth: '3px' }
