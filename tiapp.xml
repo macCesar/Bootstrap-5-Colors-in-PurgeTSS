@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
   <id>com.codigomovil.colors</id>
-  <name>colors</name>
+  <name>BT5-Colors</name>
   <version>1.0</version>
   <publisher>not specified</publisher>
   <url>https://www.codigomovil.mx/</url>
