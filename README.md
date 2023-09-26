@@ -12,6 +12,11 @@ We've created a custom color palette inspired by Bootstrap 5 colors and showcase
 
 ## Getting Started
 
+First, make sure you have **PurgeTSS** installed globally on your machine:
+```bash
+> npm i -g purgetss
+```
+
 To get started with this Sample App and explore the custom color palette, follow these steps:
 
 1. Clone this repository to your local machine:
