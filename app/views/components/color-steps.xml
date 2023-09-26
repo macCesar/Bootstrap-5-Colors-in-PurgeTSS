@@ -1,9 +1,9 @@
 <Alloy>
   <View class="mb-2 vertical">
-    <View id="solido">
+    <View id="solid">
       <View class="w-3/5 ml-0 vertical">
-        <Label id="solido_lbl" class="mx-2 font-bold text-white" text="{color}"/>
-        <Label id="solido_hex_lbl" class="mx-2 text-white" text="{hex}"/>
+        <Label id="solid_lbl" class="mx-2 font-bold text-white" text="{color}"/>
+        <Label id="solid_hex_lbl" class="mx-2 text-white" text="{hex}"/>
       </View>
 
       <View class="w-2/5 mr-0 vertical">

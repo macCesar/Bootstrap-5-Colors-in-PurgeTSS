@@ -7,7 +7,7 @@
 
     <View class="grid w-auto mt-2" dataCollection="colors">
       <View class="grid-cols-2">
-        <Require src="color-steps" />
+        <Require src="components/color-steps" />
       </View>
     </View>
   </View>

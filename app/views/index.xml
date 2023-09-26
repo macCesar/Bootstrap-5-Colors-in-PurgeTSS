@@ -2,11 +2,11 @@
   <NavigationWindow id="mainWindow">
     <Window title="Bootstrap 5 - Color System">
       <ScrollView class="w-screen h-screen vertical">
-        <Require src="theme-colors" />
+        <Require src="components/theme-colors" />
 
-        <Require src="all-colors" />
+        <Require src="components/all-colors" />
 
-        <Require src="alerts" />
+        <Require src="components/alerts" />
       </ScrollView>
     </Window>
   </NavigationWindow>
