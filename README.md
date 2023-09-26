@@ -40,7 +40,3 @@ If you'd like to contribute to this Sample App or have suggestions for improveme
 ## License
 
 This Sample App is open-source and available under the [MIT License](LICENSE).
-
----
-
-Customize this README according to your project's specific details and requirements. Ensure that you replace `yourusername` with the actual GitHub usernames and project details.
