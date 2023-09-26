@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Sample App demonstrates the ease of creating a custom color palette for your Titanium mobile application using [PurgeTSS](https://purgetss.com).
+This Sample App demonstrates the ease of creating a custom color palette for your [Titanium](https://titaniumsdk.com) mobile application using [PurgeTSS](https://purgetss.com).
 
 We've created a custom color palette inspired by Bootstrap 5 colors and showcased it within the app. This project aims to highlight how simple it is to work with and recreate a personalized color palette using PurgeTSS.
 
