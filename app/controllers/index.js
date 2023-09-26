@@ -1,1 +1,1 @@
-$.mainWindow.open()
+$.index.open()

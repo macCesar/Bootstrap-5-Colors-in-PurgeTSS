@@ -1,13 +1,11 @@
 <Alloy>
-  <NavigationWindow id="mainWindow">
-    <Window title="Bootstrap 5 - Color System">
-      <ScrollView class="wh-screen vertical">
-        <Require src="components/theme-colors" />
+  <Window title="Bootstrap 5 - Color System">
+    <ScrollView class="wh-screen vertical">
+      <Require src="components/theme-colors" />
 
-        <Require src="components/all-colors" />
+      <Require src="components/all-colors" />
 
-        <Require src="components/alerts" />
-      </ScrollView>
-    </Window>
-  </NavigationWindow>
+      <Require src="components/alerts" />
+    </ScrollView>
+  </Window>
 </Alloy>
