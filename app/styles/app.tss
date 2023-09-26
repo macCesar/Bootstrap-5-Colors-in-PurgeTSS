@@ -154,7 +154,6 @@
 '.h-14': { height: 56 }
 '.h-16': { height: 64 }
 '.h-auto': { height: Ti.UI.SIZE }
-'.h-screen': { height: Ti.UI.FILL }
 '.horizontal': { layout: 'horizontal' }
 '.info': { color: '#0dcaf0' }
 '.light': { color: '#f8f9fa' }
@@ -188,6 +187,7 @@
 '.w-full': { width: '100%' }
 '.w-screen': { width: Ti.UI.FILL }
 '.warning': { color: '#ffc107' }
+'.wh-screen': { width: Ti.UI.FILL, height: Ti.UI.FILL }
 
 // Default Font Awesome
 '.fa-square': { text: '\uf0c8', title: '\uf0c8' }
