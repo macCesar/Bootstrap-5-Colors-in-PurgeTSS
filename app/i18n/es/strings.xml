@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="alerts">Alertas</string>
+  <string name="alerts_description">Proporciona mensajes de retroalimentación contextual para acciones típicas del usuario con un puñado de mensajes de alerta disponibles y flexibles.</string>
+  <string name="alert_primary">   Una alerta primaria simple. ¡Échale un vistazo!</string>
+  <string name="alert_secondary">   Una alerta secundaria simple. ¡Échale un vistazo!</string>
+  <string name="alert_success">   Una alerta de éxito simple. ¡Échale un vistazo!</string>
+  <string name="alert_danger">   Una alerta de peligro simple. ¡Échale un vistazo!</string>
+  <string name="alert_warning">   Una alerta de advertencia simple. ¡Échale un vistazo!</string>
+  <string name="alert_info">   Una alerta informativa simple. ¡Échale un vistazo!</string>
+  <string name="alert_light">   Una alerta clara simple. ¡Échale un vistazo!</string>
+  <string name="alert_dark">   Una alerta oscura simple. ¡Échale un vistazo!</string>
+  <string name="all_colors">Todos los colores</string>
+  <string name="all_colors_description">Asegúrate de supervisar las relaciones de contraste al personalizar los colores. Como se muestra a continuación, hemos agregado tres relaciones de contraste para cada uno de los colores principales: una para los colores actuales de la muestra, una para el blanco y otra para el negro.</string>
+  <string name="color">Color</string>
+  <string name="color_description">Bootstrap cuenta con un extenso sistema de colores que tematiza nuestros estilos y componentes. Esto permite una personalización y extensión más completa para cualquier proyecto.</string>
+  <string name="theme_colors">Colores del tema</string>
+  <string name="theme_colors_description">Utilizamos un subconjunto de todos los colores para crear una paleta de colores más pequeña para generar esquemas de color.</string>
+</resources>

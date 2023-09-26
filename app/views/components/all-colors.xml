@@ -1,8 +1,8 @@
 <Alloy>
   <View id="all-colors" class="mt-4 vertical">
     <View class="mx-2 vertical">
-      <Label class="w-screen text-xl font-bold">All colors</Label>
-      <Label class="w-full h-auto text-base bg-transparent">Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors — one for the swatch’s current colors, one for against white, and one for against black.</Label>
+      <Label class="w-screen text-xl font-bold" text="L('all_colors')" />
+      <Label class="w-full h-auto text-base bg-transparent" text="L('all_colors_description')" />
     </View>
 
     <View class="grid w-auto mt-2" dataCollection="colors">

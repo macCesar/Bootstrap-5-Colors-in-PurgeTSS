@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="alerts">Alerts</string>
+  <string name="alerts_description">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</string>
+  <string name="alert_primary">   A simple primary alert—check it out!</string>
+  <string name="alert_secondary">   A simple secondary alert—check it out!</string>
+  <string name="alert_success">   A simple success alert—check it out!</string>
+  <string name="alert_danger">   A simple danger alert—check it out!</string>
+  <string name="alert_warning">   A simple warning alert—check it out!</string>
+  <string name="alert_info">   A simple info alert—check it out!</string>
+  <string name="alert_light">   A simple light alert—check it out!</string>
+  <string name="alert_dark">   A simple dark alert—check it out!</string>
+  <string name="all_colors">All colors</string>
+  <string name="all_colors_description">Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors — one for the swatch’s current colors, one for against white, and one for against black.</string>
+  <string name="color">Color</string>
+  <string name="color_description">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</string>
+  <string name="theme_colors">Theme colors</string>
+  <string name="theme_colors_description">We use a subset of all colors to create a smaller color palette for generating color schemes.</string>
+</resources>
