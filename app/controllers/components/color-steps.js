@@ -1,5 +1,5 @@
 const theModel = $model.toJSON()
-const steps = [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ]
+const steps = [100, 200, 300, 400, 500, 600, 700, 800, 900]
 
 $.resetClass($.solid, `w-screen h-16 mx-1 bg-${theModel.color}-500`)
 
