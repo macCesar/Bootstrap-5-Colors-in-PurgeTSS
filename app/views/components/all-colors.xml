@@ -1,11 +1,11 @@
 <Alloy>
-  <View id="all-colors" class="mt-4 vertical">
-    <View class="mx-2 vertical">
+  <View id="all-colors" class="vertical mt-4">
+    <View class="vertical mx-2">
       <Label class="w-screen text-xl font-bold" text="L('all_colors')" />
-      <Label class="w-full h-auto text-base bg-transparent" text="L('all_colors_description')" />
+      <Label class="h-auto w-full bg-transparent text-base" text="L('all_colors_description')" />
     </View>
 
-    <View class="grid w-auto mt-2" dataCollection="colors">
+    <View class="mt-2 grid w-auto" dataCollection="colors">
       <View class="grid-cols-2">
         <Require src="components/color-steps" />
       </View>

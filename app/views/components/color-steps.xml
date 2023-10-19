@@ -1,25 +1,25 @@
 <Alloy>
-  <View class="mb-2 vertical">
+  <View class="vertical mb-2">
     <View id="solid">
-      <View class="w-3/5 ml-0 vertical">
+      <View class="vertical ml-0 w-3/5">
         <Label id="solid_lbl" class="mx-2 font-bold text-white" text="{color}"/>
         <Label id="solid_hex_lbl" class="mx-2 text-white" text="{hex}"/>
       </View>
 
-      <View class="w-2/5 mr-0 vertical">
-        <View class="mr-0 horizontal">
-          <Label class="mr-1 text-right text-white text-xxs fas fa-square" />
-          <Label id="ratio_1" class="mr-2 font-mono text-xs text-right text-white" text="{ratio_1}"/>
+      <View class="vertical mr-0 w-2/5">
+        <View class="horizontal mr-0">
+          <Label class="fas fa-square mr-1 text-right text-xxs text-white" />
+          <Label id="ratio_1" class="mr-2 text-right font-mono text-xs text-white" text="{ratio_1}"/>
         </View>
 
-        <View class="mr-0 horizontal">
-          <Label class="mr-1 text-right text-white text-xxs fas fa-square" />
-          <Label id="ratio_2" class="mr-2 font-mono text-xs text-right text-white" text="{ratio_2}"/>
+        <View class="horizontal mr-0">
+          <Label class="fas fa-square mr-1 text-right text-xxs text-white" />
+          <Label id="ratio_2" class="mr-2 text-right font-mono text-xs text-white" text="{ratio_2}"/>
         </View>
 
-        <View class="mr-0 horizontal">
-          <Label class="mr-1 text-right text-black text-xxs fas fa-square" />
-          <Label id="ratio_3" class="mr-2 font-mono text-xs text-right text-black" text="{ratio_3}"/>
+        <View class="horizontal mr-0">
+          <Label class="fas fa-square mr-1 text-right text-xxs text-black" />
+          <Label id="ratio_3" class="mr-2 text-right font-mono text-xs text-black" text="{ratio_3}"/>
         </View>
       </View>
     </View>

@@ -1,24 +1,24 @@
 <Alloy>
-  <View id="alert" class="mt-4 mb-2 vertical">
-    <View class="mx-2 vertical">
+  <View id="alert" class="vertical mb-2 mt-4">
+    <View class="vertical mx-2">
       <Label class="w-screen text-xl font-bold" text="L('alerts')" />
-      <Label class="w-full h-auto text-base bg-transparent" text="L('alerts_description')" />
+      <Label class="h-auto w-full bg-transparent text-base" text="L('alerts_description')" />
     </View>
 
-    <Label class="w-screen mx-2 mt-2 alert-primary h-14 alert" text="L('alert_primary')" />
+    <Label class="alert-primary alert mx-2 mt-2 h-14 w-screen" text="L('alert_primary')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-secondary h-14 alert" text="L('alert_secondary')" />
+    <Label class="alert-secondary alert mx-2 mt-2 h-14 w-screen" text="L('alert_secondary')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-success h-14 alert" text="L('alert_success')" />
+    <Label class="alert-success alert mx-2 mt-2 h-14 w-screen" text="L('alert_success')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-danger h-14 alert" text="L('alert_danger')" />
+    <Label class="alert-danger alert mx-2 mt-2 h-14 w-screen" text="L('alert_danger')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-warning h-14 alert" text="L('alert_warning')" />
+    <Label class="alert-warning alert mx-2 mt-2 h-14 w-screen" text="L('alert_warning')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-info h-14 alert" text="L('alert_info')" />
+    <Label class="alert-info alert mx-2 mt-2 h-14 w-screen" text="L('alert_info')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-light h-14 alert" text="L('alert_light')" />
+    <Label class="alert-light alert mx-2 mt-2 h-14 w-screen" text="L('alert_light')" />
 
-    <Label class="w-screen mx-2 mt-2 alert-dark h-14 alert" text="L('alert_dark')" />
+    <Label class="alert-dark alert mx-2 mt-2 h-14 w-screen" text="L('alert_dark')" />
   </View>
 </Alloy>

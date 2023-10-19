@@ -1,60 +1,60 @@
 <Alloy>
-  <View class="mt-2 vertical">
-    <View class="mx-2 vertical">
+  <View class="vertical mt-2">
+    <View class="vertical mx-2">
       <Label id="bootstrap" class="w-screen text-3xl font-bold" text="L('color')" />
-      <Label class="w-full h-auto text-xl bg-transparent" text="L('color_description')" />
+      <Label class="h-auto w-full bg-transparent text-xl" text="L('color_description')" />
     </View>
 
-    <View class="mx-2 mt-4 vertical">
+    <View class="vertical mx-2 mt-4">
       <Label id="colors" class="w-screen text-xl font-bold" text="L('theme_colors')" />
-      <Label class="w-full h-auto text-base bg-transparent" text="L('theme_colors_description')" />
+      <Label class="h-auto w-full bg-transparent text-base" text="L('theme_colors_description')" />
     </View>
 
-    <View class="grid w-auto mt-1">
+    <View class="mt-1 grid w-auto">
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-primary">
+        <View class="h-12 w-screen gap-1 bg-primary">
           <Label class="text-white" text="Primary" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-secondary">
+        <View class="h-12 w-screen gap-1 bg-secondary">
           <Label class="text-white" text="Secondary" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-success">
+        <View class="h-12 w-screen gap-1 bg-success">
           <Label class="text-white" text="Success" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-danger">
+        <View class="h-12 w-screen gap-1 bg-danger">
           <Label class="text-white" text="Danger" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-warning">
+        <View class="h-12 w-screen gap-1 bg-warning">
           <Label class="text-dark" text="Warning" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-info">
+        <View class="h-12 w-screen gap-1 bg-info">
           <Label class="text-dark" text="Info" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-light">
+        <View class="h-12 w-screen gap-1 bg-light">
           <Label class="text-dark" text="Light" />
         </View>
       </View>
 
       <View class="grid-cols-2">
-        <View class="w-screen h-12 gap-1 bg-dark">
+        <View class="h-12 w-screen gap-1 bg-dark">
           <Label class="text-white" text="Dark" />
         </View>
       </View>

@@ -175,8 +175,7 @@ module.exports = {
     },
     Window: {
       default: {
-        backButtonTitle: '',
-        apply: 'bar-(#7952b3) bg-white'
+        backButtonTitle: '', apply: 'bar-(#7952b3) bg-white'
       },
       ios: {
         apply: 'translucent-false nav-tint-white title-attributes-white'
@@ -206,22 +205,22 @@ module.exports = {
         apply: 'text-2xl'
       },
       primary: {
-        apply: 'text-blue-700 bg-blue-100 border-(#b6d4fe)'
+        apply: 'text-blue-700 border-(#b6d4fe) bg-blue-100'
       },
       secondary: {
         apply: 'text-(#41464b) bg-(#e2e3e5) border-(#d3d6d8)'
       },
       success: {
-        apply: 'text-green-700 bg-green-100 border-(#badbcc)'
+        apply: 'text-green-700 border-(#badbcc) bg-green-100'
       },
       danger: {
-        apply: 'text-red-700 bg-red-100 border-(#f5c2c7)'
+        apply: 'text-red-700 border-(#f5c2c7) bg-red-100'
       },
       warning: {
-        apply: 'text-yellow-800 bg-yellow-100 border-(#ffecb5)'
+        apply: 'text-yellow-800 border-(#ffecb5) bg-yellow-100'
       },
       info: {
-        apply: 'text-cyan-800 bg-cyan-100 border-(#b6effb)'
+        apply: 'text-cyan-800 border-(#b6effb) bg-cyan-100'
       },
       light: {
         apply: 'text-(#636464) bg-(#fefefe) border-(#fdfdfe)'
