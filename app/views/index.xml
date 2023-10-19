@@ -1,5 +1,5 @@
 <Alloy>
-  <Window title="Bootstrap 5 - Color System">
+  <Window title="Bootstrap 5 - Color System" class="extend-safe-area-false">
     <ScrollView class="wh-screen vertical">
       <Require src="components/theme-colors" />
 
