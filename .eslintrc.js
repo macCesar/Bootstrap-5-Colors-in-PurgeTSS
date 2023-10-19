@@ -1,6 +1,7 @@
 module.exports = {
   extends: 'axway/env-alloy',
   globals: {
+    task: true,
     $model: true
   },
   parserOptions: {
