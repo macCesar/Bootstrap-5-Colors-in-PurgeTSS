@@ -1,4 +1,4 @@
-// PurgeTSS v6.2.34
+// PurgeTSS v6.2.36
 // Created by César Estrada
 // https://github.com/macCesar/purgeTSS
 
@@ -142,6 +142,7 @@
 '.bg-yellow-700': { backgroundColor: '#997404' }
 '.bg-yellow-800': { backgroundColor: '#664d03' }
 '.bg-yellow-900': { backgroundColor: '#332701' }
+'.extend-safe-area-false': { extendSafeArea: false }
 '.font-bold': { font: { fontWeight: 'bold' } }
 '.font-mono': { font: { fontFamily: 'Courier' } }
 '.gap-1': { top: 4, right: 4, bottom: 4, left: 4 }
