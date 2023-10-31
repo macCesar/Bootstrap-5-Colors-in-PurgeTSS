@@ -27,14 +27,16 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
+  //
   "eslint.format.enable": true,
+  //
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "html-css-class-completion.HTMLLanguages": [
     "xml"
   ],
-  "html-css-class-completion.excludeGlobPattern": "archivos/**/*.{css,html},public/**/*.{css,html},**/node_modules/**,purgetss/fonts/**/*.{css,html}",
+  "html-css-class-completion.excludeGlobPattern": "public/**/*.{css,html},**/node_modules/**,purgetss/fonts/**/*.{css,html}",
   "tailwindCSS.includeLanguages": {
     "xml": "html"
   },
@@ -44,13 +46,14 @@
     "classes",
     "ngClass",
     "className",
-    "activeIcon",
+    "activeIcon"
   ],
   "tailwindCSS.experimental.configFile": {
     "purgetss/config.js": [
       "app/views/**"
     ]
   },
+  //
   "tailwind-raw-reorder.classRegex": {
     "xml": [
       [
@@ -64,5 +67,5 @@
         "[\"'`]([^]+)"
       ]
     ]
-  },
+  }
 }
