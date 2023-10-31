@@ -16,4 +16,14 @@
   <string name="color_description">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</string>
   <string name="theme_colors">Theme colors</string>
   <string name="theme_colors_description">We use a subset of all colors to create a smaller color palette for generating color schemes.</string>
+  <string name="code_copied">Code copied to clipboard!</string>
+  <string name="bootstrap_icons">Bootstrap Icons</string>
+  <string name="bootstrap_icons_description">Free, high quality, open source icon library with over 2,000 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project.</string>
+  <string name="load_icons">Load Icons</string>
+  <string name="this_will_take_a_while">This will take some time</string>
+  <string name="loading_icons">Loading Icons</string>
+  <string name="page">Page</string>
+  <string name="loading_colors">Loading Colors</string>
+  <string name="copied">Copied</string>
+  <string name="copy">Copy</string>
 </resources>
