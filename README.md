@@ -2,12 +2,14 @@
 
 ## Overview
 
+### Color System
+
 This Sample App demonstrates the ease of creating a custom color palette for your [Titanium](https://titaniumsdk.com) mobile application using [PurgeTSS](https://purgetss.com).
 
 We've created a custom color palette inspired by Bootstrap 5 colors and showcased it within the app. This project aims to highlight how simple it is to work with and recreate a personalized color palette using PurgeTSS.
 
 <p align="center" width="100%">
-<img src="app/assets/bt5-color-system.png" width="375" alt="iOS Screen - BT5 Color System" >
+<img src="app/assets/bt5-color-system-tabs.png" width="375" alt="iOS Screen - BT5 Color System" >
 </p>
 
 ## Getting Started
@@ -35,9 +37,24 @@ To get started with this Sample App and explore the custom color palette, follow
 
 6. You can copy the `config.js` file to your Titanium project to use the custom color palette in your app.
 
+
+## Bootstrap Icons
+
+A free, high-quality, open-source icon library with over 2,000 icons. The original Bootstrap Icons are available in SVGs, SVG sprites, and web fonts.
+
+**We've converted the original `.woff` font file to `.ttf` for use in any Titanium mobile app.**
+
+In the `Icons` tab, click on any of the icons to view an example code and see the class name.
+
+<p align="center" width="100%">
+<img src="app/assets/bt5-icons.png" width="375" alt="iOS Screen - BT5 Icons" >
+</p>
+
+
 ## Resources
 
 - [Bootstrap 5 Color Palette Documentation](https://getbootstrap.com/docs/5.2/customize/color/) - Refer to Bootstrap 5 documentation for additional information on theme colors.
+- [Bootstrap Icons](https://icons.getbootstrap.com) - Free, high quality, open source icon library with over 2,000 icons.
 
 ## Contributing
 
