@@ -1,0 +1,7 @@
+<Alloy>
+  <View class="vertical">
+    <Label id="currentPage" class="rounded-r-8 mb-2 ml-0 h-8 w-36 bg-indigo-500 text-center font-semibold text-white" />
+
+    <View id="theIcons" class="horizontal mb-4" />
+  </View>
+</Alloy>

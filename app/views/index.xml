@@ -1,11 +1,63 @@
 <Alloy>
-  <Window title="Bootstrap 5 - Color System" class="extend-safe-area-false">
-    <ScrollView class="wh-screen vertical">
-      <Require src="components/theme-colors" />
+  <TabGroup>
+    <!-- <ActionBar platform="android" logo="appicon.png" /> -->
 
-      <Require src="components/all-colors" />
+    <!-- ! COLORS -->
+    <Tab module="tikit.ui" title="Colors" icon="bi bi-palette text-2xl" activeIcon="bi bi-palette-fill text-2xl">
+      <Window title="Bootstrap 5 - Color System">
+        <ScrollView class="wh-screen vertical">
+          <Require src="components/colors/theme" />
 
-      <Require src="components/alerts" />
-    </ScrollView>
-  </Window>
+          <Require src="components/colors/all" />
+        </ScrollView>
+
+        <ActivityIndicator id="activityindicatorColors" class="style-activity-indicator-plain bg-dark/50 rounded-8 h-8 w-36 text-sm text-white" message="L('loading_colors')" />
+      </Window>
+    </Tab>
+
+    <!-- ! ALERTS -->
+    <Tab module="tikit.ui" title="Alerts" icon="bi bi-bell text-2xl" activeIcon="bi bi-bell-fill text-2xl">
+      <Window title="Alerts" class="">
+        <ScrollView class="wh-screen vertical">
+          <View id="alert" class="vertical mx-4 mb-2 mt-4">
+            <View class="vertical mx-2">
+              <Label class="w-screen text-3xl font-bold" text="L('alerts')" />
+              <Label class="h-auto w-full bg-transparent text-base" text="L('alerts_description')" />
+            </View>
+
+            <Label class="alert-primary alert mt-4 h-14 w-screen" text="L('alert_primary')" />
+            <Label class="alert-secondary alert mt-4 h-14 w-screen" text="L('alert_secondary')" />
+            <Label class="alert-success alert mt-4 h-14 w-screen" text="L('alert_success')" />
+            <Label class="alert-danger alert mt-4 h-14 w-screen" text="L('alert_danger')" />
+            <Label class="alert-warning alert mt-4 h-14 w-screen" text="L('alert_warning')" />
+            <Label class="alert-info alert mt-4 h-14 w-screen" text="L('alert_info')" />
+            <Label class="alert-light alert mt-4 h-14 w-screen" text="L('alert_light')" />
+            <Label class="alert-dark alert mt-4 h-14 w-screen" text="L('alert_dark')" />
+          </View>
+        </ScrollView>
+      </Window>
+    </Tab>
+
+    <!-- ! ICONS -->
+    <Tab module="tikit.ui" title="Icons" icon="bi bi-file-image text-2xl" activeIcon="bi bi-file-image-fill text-2xl">
+      <Window id="icons" title="L('bootstrap_icons')" onPostlayout="doPostlayout">
+        <View class="wh-screen vertical">
+          <View class="vertical mx-4 mb-2 mt-4">
+            <Label id="bootstrap" class="w-screen text-3xl font-bold" text="L('bootstrap_icons')" />
+            <Label class="h-auto w-full bg-transparent text-base" text="L('bootstrap_icons_description')" />
+          </View>
+
+          <ScrollView id="theIconsScrollView" class="vertical show-vertical-scroll-indicator horizontal wh-screen android:scroll-type-vertical mt-2" onScroll="keepLoading">
+            <View id="theIcons" class="vertical" onClick="showIcon" />
+
+            <Label id="activityindicator" class="style-activity-indicator-plain bg-dark/50 rounded-8 mb-4 h-8 w-36 text-center text-sm text-white" text="L('loading_icons')" />
+          </ScrollView>
+        </View>
+
+        <Card id="codeSample" module="tikit.ui" variant="code" color="black" copy="true" title="L('bootstrap_icons')" text="" close="true" classes="visible-false vertical-constraint" />
+
+        <Animation module="purgetss.ui" id="codeSampleCard" class="bounds:m-2" />
+      </Window>
+    </Tab>
+  </TabGroup>
 </Alloy>

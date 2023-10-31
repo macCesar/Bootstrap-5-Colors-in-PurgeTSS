@@ -1,13 +1,13 @@
 <Alloy>
-  <View id="all-colors" class="vertical mt-4">
+  <View class="vertical mx-2 mt-6">
     <View class="vertical mx-2">
       <Label class="w-screen text-xl font-bold" text="L('all_colors')" />
       <Label class="h-auto w-full bg-transparent text-base" text="L('all_colors_description')" />
     </View>
 
     <View class="mt-2 grid w-auto" dataCollection="colors">
-      <View class="grid-cols-2">
-        <Require src="components/color-steps" />
+      <View class="handheld:grid-cols-2 tablet:grid-cols-4">
+        <Require src="components/colors/steps" />
       </View>
     </View>
   </View>

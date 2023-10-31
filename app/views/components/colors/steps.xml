@@ -1,0 +1,39 @@
+<Alloy>
+  <View class="vertical mx-2 mb-4">
+    <View id="solid" class="h-16 w-screen rounded-t-lg">
+      <View class="vertical ml-0 w-3/5">
+        <Label class="mx-2 font-bold text-white" text="{color}" />
+        <Label class="mx-2 text-sm text-white" text="{hex}" />
+      </View>
+
+      <View class="vertical mr-0 w-2/5">
+        <View class="horizontal mr-0">
+          <Label class="bi bi-square-fill text-xxs mr-1 text-right text-white" />
+          <Label class="mr-2 text-right font-mono text-xs text-white" text="{ratio1}" />
+        </View>
+
+        <View class="horizontal ios:my-0.5 mr-0">
+          <Label class="bi bi-square-fill text-xxs mr-1 text-right text-white" />
+          <Label class="mr-2 text-right font-mono text-xs text-white" text="{ratio2}" />
+        </View>
+
+        <View class="horizontal mr-0">
+          <Label class="bi bi-square-fill text-xxs mr-1 text-right text-black" />
+          <Label class="mr-2 text-right font-mono text-xs text-black" text="{ratio3}" />
+        </View>
+      </View>
+    </View>
+
+    <View class="vertical">
+      <Label id="step_100_lbl" text="   {color}-100" class="h-11 w-screen text-sm text-black" />
+      <Label id="step_200_lbl" text="   {color}-200" class="h-11 w-screen text-sm text-black" />
+      <Label id="step_300_lbl" text="   {color}-300" class="h-11 w-screen text-sm text-black" />
+      <Label id="step_400_lbl" text="   {color}-400" class="h-11 w-screen text-sm text-black" />
+      <Label id="step_500_lbl" text="   {color}-500" class="h-11 w-screen text-sm text-white" />
+      <Label id="step_600_lbl" text="   {color}-600" class="h-11 w-screen text-sm text-white" />
+      <Label id="step_700_lbl" text="   {color}-700" class="h-11 w-screen text-sm text-white" />
+      <Label id="step_800_lbl" text="   {color}-800" class="h-11 w-screen text-sm text-white" />
+      <Label id="step_900_lbl" text="   {color}-900" class="h-11 w-screen rounded-b-lg text-sm text-white" />
+    </View>
+  </View>
+</Alloy>

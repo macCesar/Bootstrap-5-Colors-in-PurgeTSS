@@ -1,1 +1,0 @@
-Alloy.Collections.colors.fetch()

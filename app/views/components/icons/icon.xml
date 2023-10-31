@@ -1,0 +1,6 @@
+<Alloy>
+  <View class="tablet:grid-cols-8 handheld:grid-cols-5 tablet:mb-4 handheld:mb-2 vertical h-auto rounded-lg">
+    <Label text="$.args.icon" font.fontFamily="$.args.fontFamily" type="icon" name="$.args.name" class="android:bg-transparent tablet:text-5xl handheld:text-4xl selected-indigo-600 h-12 text-indigo-500" />
+    <!-- <Label text="$.args.name" class="text-xxs w-full text-center" /> -->
+  </View>
+</Alloy>
