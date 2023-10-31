@@ -35,7 +35,9 @@ Alloy.createController = function(name, args) {
 
     var path = name.split('/')
 
-    if (path.length > 0) { name = path[path.length - 1] }
+    if (path.length > 0) {
+      name = path[path.length - 1]
+    }
 
     if (Alloy.Controllers[name] && !controller.getView().id) {
       console.warn('::AlloyXL:: The controller Alloy.Controllers.' + name + ' (' + controller.__controllerPath + ') exists, and will be overwriten because it\'s conflicting with another controller already instanciated with the same name. Please add a unique ID on the top parent view within that controller view so you can use this as the controller name within AlloyXL to avoid this.')
@@ -60,7 +62,9 @@ Alloy.createController = function(name, args) {
         view.addEventListener('open', function open(e) {
           view.removeEventListener('open', open)
           controller.trigger('open', e)
-          if (true) { console.log('::AlloyXL:: controller ' + name + ' was opened') }
+          if (true) {
+            console.log('::AlloyXL:: controller ' + name + ' was opened')
+          }
         })
 
         view.addEventListener('close', function close() {
@@ -71,19 +75,25 @@ Alloy.createController = function(name, args) {
 
           controller = null
 
-          if (true) { console.log('::AlloyXL:: Controller ' + name + ' cleaned up!') }
+          if (true) {
+            console.log('::AlloyXL:: Controller ' + name + ' cleaned up!')
+          }
         })
 
         view.addEventListener('postlayout', function postlayout(e) {
           view.removeEventListener('postlayout', postlayout)
           controller.trigger('postlayout', e)
-          if (true) { console.log('::AlloyXL:: controller ' + name + ' layout finished') }
+          if (true) {
+            console.log('::AlloyXL:: controller ' + name + ' layout finished')
+          }
         })
       } else {
         view.addEventListener('postlayout', function postlayout(e) {
           view.removeEventListener('postlayout', postlayout)
           controller.trigger('postlayout', e)
-          if (true) { console.log('::AlloyXL:: controller ' + name + ' layout finished') }
+          if (true) {
+            console.log('::AlloyXL:: controller ' + name + ' layout finished')
+          }
         })
       }
     }
