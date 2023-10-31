@@ -1,14 +1,18 @@
-// PurgeTSS v6.2.36
+// PurgeTSS v6.2.39
 // Created by César Estrada
 // https://github.com/macCesar/purgeTSS
 
 // Ti Elements
-'Label': { font: { fontSize: 14 } }
+'Label': { color: '#212529', textColor: '#212529', font: { fontFamily: 'MavenPro-Regular', fontSize: 16 } }
 'ScrollView': { contentHeight: Ti.UI.SIZE, contentWidth: Ti.UI.FILL }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
+'TabGroup': { activeTintColor: '#FFFFFF', activeTitleColor: '#FFFFFF', orientationModes: [ Ti.UI.PORTRAIT ], tabsBackgroundColor: '#6610f2' }
+'TabGroup[platform=android]': { autoTabTitle: true, shiftMode: 0, style: Ti.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION }
+'TabGroup[platform=ios]': { tint: '#e0cffc', titleColor: '#e0cffc' }
+'Tab[platform=android]': { backgroundFocusedColor: '#520dc2', titleColor: '#FFFFFF' }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
-'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
-'Window[platform=android]': { theme: 'Theme.Titanium.DayNight' }
+'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#6610f2', extendSafeArea: false }
+'Window[platform=android]': { theme: 'Theme.Titanium.Light.Solid' }
 'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
 
 // Custom Styles
@@ -142,45 +146,129 @@
 '.bg-yellow-700': { backgroundColor: '#997404' }
 '.bg-yellow-800': { backgroundColor: '#664d03' }
 '.bg-yellow-900': { backgroundColor: '#332701' }
-'.extend-safe-area-false': { extendSafeArea: false }
+'.border-1': { borderWidth: 1 }
+'.editable-false': { editable: false }
+'.enable-copy-false': { enableCopy: false }
 '.font-bold': { font: { fontWeight: 'bold' } }
-'.font-mono': { font: { fontFamily: 'Courier' } }
-'.gap-1': { top: 4, right: 4, bottom: 4, left: 4 }
+'.font-mono': { font: { fontFamily: 'FiraCode-Regular' } }
+'.font-semibold': { font: { fontWeight: 'semibold' } }
+'.gap-2': { top: 8, right: 8, bottom: 8, left: 8 }
 '.grid': { layout: 'horizontal', width: '100%' }
-'.grid-cols-2': { width: '50%' }
 '.h-11': { height: 44 }
 '.h-12': { height: 48 }
 '.h-14': { height: 56 }
 '.h-16': { height: 64 }
+'.h-3': { height: 12 }
+'.h-8': { height: 32 }
 '.h-auto': { height: Ti.UI.SIZE }
 '.horizontal': { layout: 'horizontal' }
 '.mb-2': { bottom: 8 }
+'.mb-4': { bottom: 16 }
 '.ml-0': { left: 0 }
+'.ml-1': { left: 4 }
+'.ml-16': { left: 64 }
+'.ml-2': { left: 8 }
 '.mr-0': { right: 0 }
 '.mr-1': { right: 4 }
+'.mr-16': { right: 64 }
 '.mr-2': { right: 8 }
+'.mt-0': { top: 0 }
 '.mt-1': { top: 4 }
+'.mt-1.5': { top: 6 }
 '.mt-2': { top: 8 }
 '.mt-4': { top: 16 }
+'.mt-6': { top: 24 }
+'.mx-0.5': { right: 2, left: 2 }
 '.mx-1': { right: 4, left: 4 }
 '.mx-2': { right: 8, left: 8 }
+'.mx-4': { right: 16, left: 16 }
+'.rounded-3': { borderRadius: 6 }
+'.rounded-8': { borderRadius: 16 }
+'.rounded-b-lg': { borderRadius: [0, 0, 8, 8] }
+'.rounded-lg': { borderRadius: 8 }
+'.rounded-r-8': { borderRadius: [0, 16, 16, 0] }
+'.rounded-t-lg': { borderRadius: [8, 8, 0, 0] }
+'.rounded-tr-3': { borderRadius: [0, 6, 0, 0] }
+'.scrollable-false': { scrollable: false }
+'.selected-indigo-600': { selectedColor: '#520dc2' }
+'.show-vertical-scroll-indicator': { showVerticalScrollIndicator: true }
+'.style-activity-indicator-plain': { style: Ti.UI.ActivityIndicatorStyle.PLAIN }
+'.text-2xl': { font: { fontSize: 24 } }
 '.text-3xl': { font: { fontSize: 30 } }
 '.text-base': { font: { fontSize: 16 } }
 '.text-black': { color: '#000000', textColor: '#000000' }
-'.text-dark': { color: '#212529', textColor: '#212529' }
+'.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
+'.text-indigo-500': { color: '#6610f2', textColor: '#6610f2' }
 '.text-right': { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT }
+'.text-sm': { font: { fontSize: 14 } }
 '.text-white': { color: '#ffffff', textColor: '#ffffff' }
 '.text-xl': { font: { fontSize: 20 } }
 '.text-xs': { font: { fontSize: 12 } }
 '.text-xxs': { font: { fontSize: 10 } }
+'.touch-enabled-false': { touchEnabled: false }
 '.vertical': { layout: 'vertical' }
+'.vertical-constraint': { constraint: 'vertical' }
+'.visible-false': { visible: false }
+'.w-11/12': { width: '91.666667%' }
+'.w-16': { width: 64 }
 '.w-2/5': { width: '40%' }
+'.w-3': { width: 12 }
 '.w-3/5': { width: '60%' }
+'.w-36': { width: 144 }
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-full': { width: '100%' }
 '.w-screen': { width: Ti.UI.FILL }
 '.wh-screen': { width: Ti.UI.FILL, height: Ti.UI.FILL }
 
-// Default Font Awesome
-'.fa-square': { text: '\uf0c8', title: '\uf0c8' }
-'.fas': { font: { fontFamily: 'FontAwesome6Free-Solid' } }
+// Platform and Device Modifiers
+'.android:bg-transparent[platform=android]': { backgroundColor: 'transparent' }
+'.android:border-style-none[platform=android]': { borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE }
+'.android:pt-20[platform=android]': { padding: { top: 80 } }
+'.android:px-8[platform=android]': { padding: { right: 32, left: 32 } }
+'.android:scroll-type-vertical[platform=android]': { scrollType: 'vertical' }
+'.android:touch-feedback[platform=android]': { touchFeedback: true }
+'.handheld:grid-cols-2[formFactor=handheld]': { width: '50%' }
+'.handheld:grid-cols-5[formFactor=handheld]': { width: '20%' }
+'.handheld:mb-2[formFactor=handheld]': { bottom: 8 }
+'.handheld:text-4xl[formFactor=handheld]': { font: { fontSize: 36 } }
+'.ios:my-0.5[platform=ios]': { top: 2, bottom: 2 }
+'.ios:pb-4[platform=ios]': { padding: { bottom: 16 } }
+'.ios:pt-12[platform=ios]': { padding: { top: 48 } }
+'.ios:px-3[platform=ios]': { padding: { right: 12, left: 12 } }
+'.tablet:grid-cols-4[formFactor=tablet]': { width: '25%' }
+'.tablet:grid-cols-8[formFactor=tablet]': { width: '12.5%' }
+'.tablet:mb-4[formFactor=tablet]': { bottom: 16 }
+'.tablet:text-5xl[formFactor=tablet]': { font: { fontSize: 48 } }
+
+// Animation Module
+'.bounds:m-2': { bounds: { top: 8, right: 8, bottom: 8, left: 8 } }
+
+// Color Opacity Modifiers
+'.bg-dark/50': { backgroundColor: '#80212529' }
+'.bg-gray-500/50': { backgroundColor: '#80adb5bd' }
+'.bg-gray-500/80': { backgroundColor: '#ccadb5bd' }
+'.bg-gray-500/90': { backgroundColor: '#e6adb5bd' }
+'.bg-gray-700/50': { backgroundColor: '#80495057' }
+'.bg-gray-700/80': { backgroundColor: '#cc495057' }
+'.bg-gray-700/90': { backgroundColor: '#e6495057' }
+'.bg-gray-900/50': { backgroundColor: '#80212529' }
+'.bg-gray-900/80': { backgroundColor: '#cc212529' }
+'.bg-gray-900/90': { backgroundColor: '#e6212529' }
+'.bg-white/50': { backgroundColor: '#80FFFFFF' }
+'.border-gray-500/90': { borderColor: '#e6adb5bd' }
+'.border-gray-700/90': { borderColor: '#e6495057' }
+'.border-gray-900/90': { borderColor: '#e6212529' }
+'.text-white/80': { color: '#ccffffff', textColor: '#ccffffff' }
+
+// Font Styles
+'.bi': { font: { fontFamily: 'bootstrap-icons' } }
+'.bi-bell': { text: '\uf18a', title: '\uf18a' }
+'.bi-bell-fill': { text: '\uf189', title: '\uf189' }
+'.bi-file-image': { text: '\uf39b', title: '\uf39b' }
+'.bi-file-image-fill': { text: '\uf39a', title: '\uf39a' }
+'.bi-palette': { text: '\uf4b1', title: '\uf4b1' }
+'.bi-palette-fill': { text: '\uf4b0', title: '\uf4b0' }
+'.bi-square-fill': { text: '\uf582', title: '\uf582' }
+'.font-bold': { font: { fontFamily: 'MavenPro-Bold' } }
+'.font-regular': { font: { fontFamily: 'MavenPro-Regular' } }
+'.font-semibold': { font: { fontFamily: 'MavenPro-SemiBold' } }

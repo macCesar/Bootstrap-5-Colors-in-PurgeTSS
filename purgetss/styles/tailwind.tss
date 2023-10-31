@@ -1,15 +1,20 @@
-// Based on Tailwind CSS v3.3.3: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Based on Tailwind CSS v3.3.5: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 
 // Tailwind-like styles
 // Generated with PurgeTSS
 // https://github.com/macCesar/purgeTSS
-// config.js file updated on: Thu Oct 19 2023 15:05:54 GMT-0500 (Central Daylight Time)
+// config.js file updated on: Tue Oct 31 2023 12:29:51 GMT-0500 (Central Daylight Time)
 
 // Ti Elements
 // Property: View
 // Description: An empty drawing surface or container
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
+
+// Property: Button
+// Description: A button widget that has four states: normal, disabled, focused and selected.
+'Button': { font: { fontFamily: 'MavenPro-Regular' } }
+'Button[platform=android]': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: null, viewShadowColor: null, elevation: 0 }
 
 // Property: ImageView
 // Description: A view to display a single image or series of animated images.
@@ -17,18 +22,28 @@
 
 // Property: Label
 // Description: A text label, with an optional background image.
-'Label': { font: { fontSize: 14 } }
+'Label': { color: '#212529', textColor: '#212529', font: { fontFamily: 'MavenPro-Regular', fontSize: 16 } }
 
 // Property: ScrollView
 // Description: A view that contains a horizontally and/or vertically-scrollable region of content.
 'ScrollView': { contentHeight: Ti.UI.SIZE, contentWidth: Ti.UI.FILL }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
 
+// Property: Tab
+// Description: A tab instance for a <a href="Titanium.UI.TabGroup">TabGroup</a>.
+'Tab[platform=android]': { backgroundFocusedColor: '#520dc2', titleColor: '#FFFFFF' }
+
+// Property: TabGroup
+// Description: A tabbed group of windows.
+'TabGroup': { activeTintColor: '#FFFFFF', activeTitleColor: '#FFFFFF', orientationModes: [ Ti.UI.PORTRAIT ], tabsBackgroundColor: '#6610f2' }
+'TabGroup[platform=ios]': { tint: '#e0cffc', titleColor: '#e0cffc' }
+'TabGroup[platform=android]': { autoTabTitle: true, shiftMode: 0, style: Ti.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION }
+
 // Property: Window
 // Description: The Window is an empty drawing surface or container.
-'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#7952b3' }
+'Window': { backButtonTitle: '', backgroundColor: '#FFFFFF', barColor: '#6610f2', extendSafeArea: false }
 'Window[platform=ios]': { navTintColor: '#FFFFFF', titleAttributes: { color: '#FFFFFF' }, translucent: false }
-'Window[platform=android]': { theme: 'Theme.Titanium.DayNight' }
+'Window[platform=android]': { theme: 'Theme.Titanium.Light.Solid' }
 
 // Custom Classes
 '.alert': { borderRadius: 4, borderWidth: '3px' }
@@ -2262,7 +2277,7 @@
 
 // Property(ies): fontFamily
 // Component(s): Ti.UI.ActivityIndicator, Ti.UI.Button, Ti.UI.Label, Ti.UI.ListItem, Ti.UI.Picker, Ti.UI.PickerColumn, Ti.UI.PickerRow, Ti.UI.ProgressBar, Ti.UI.Switch, Ti.UI.TableViewRow, Ti.UI.TextArea, Ti.UI.TextField
-'.font-mono': { font: { fontFamily: 'Courier' } }
+'.font-mono': { font: { fontFamily: 'FiraCode-Regular' } }
 
 // Property(ies): fontSize
 // Component(s): Ti.UI.ActivityIndicator, Ti.UI.Button, Ti.UI.Label, Ti.UI.ListItem, Ti.UI.Picker, Ti.UI.PickerColumn, Ti.UI.PickerRow, Ti.UI.ProgressBar, Ti.UI.Switch, Ti.UI.TableViewRow, Ti.UI.TextArea, Ti.UI.TextField

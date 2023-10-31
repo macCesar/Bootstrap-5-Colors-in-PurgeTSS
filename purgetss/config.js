@@ -175,13 +175,29 @@ module.exports = {
     },
     Window: {
       default: {
-        backButtonTitle: '', apply: 'bar-(#7952b3) bg-white'
+        backButtonTitle: '', apply: 'bar-indigo-500 extend-safe-area-false bg-white'
       },
       ios: {
         apply: 'translucent-false nav-tint-white title-attributes-white'
       },
       android: {
-        apply: 'theme-titanium-day-night'
+        apply: 'theme-titanium-light-solid'
+      }
+    },
+    TabGroup: {
+      default: {
+        apply: 'portrait tabs-bg-indigo-500 active-title-white active-tint-white'
+      },
+      ios: {
+        apply: 'title-indigo-100 tint-indigo-100'
+      },
+      android: {
+        apply: 'shift-mode-none android:style-tabs-bottom-navigation auto-tab-title'
+      }
+    },
+    Tab: {
+      android: {
+        apply: 'bg-focused-indigo-600 title-white'
       }
     },
     ScrollView: {
@@ -192,9 +208,17 @@ module.exports = {
         apply: 'scroll-type-vertical'
       }
     },
+    Button: {
+      default: {
+        apply: 'font-regular'
+      },
+      android: {
+        apply: 'shadow-none'
+      }
+    },
     Label: {
       default: {
-        apply: 'text-sm'
+        apply: 'text-dark font-regular text-base'
       }
     },
     '.alert': {
@@ -205,22 +229,22 @@ module.exports = {
         apply: 'text-2xl'
       },
       primary: {
-        apply: 'text-blue-700 border-(#b6d4fe) bg-blue-100'
+        apply: 'border-(#b6d4fe) bg-blue-100 text-blue-700'
       },
       secondary: {
         apply: 'text-(#41464b) bg-(#e2e3e5) border-(#d3d6d8)'
       },
       success: {
-        apply: 'text-green-700 border-(#badbcc) bg-green-100'
+        apply: 'border-(#badbcc) bg-green-100 text-green-700'
       },
       danger: {
-        apply: 'text-red-700 border-(#f5c2c7) bg-red-100'
+        apply: 'border-(#f5c2c7) bg-red-100 text-red-700'
       },
       warning: {
-        apply: 'text-yellow-800 border-(#ffecb5) bg-yellow-100'
+        apply: 'border-(#ffecb5) bg-yellow-100 text-yellow-800'
       },
       info: {
-        apply: 'text-cyan-800 border-(#b6effb) bg-cyan-100'
+        apply: 'border-(#b6effb) bg-cyan-100 text-cyan-800'
       },
       light: {
         apply: 'text-(#636464) bg-(#fefefe) border-(#fdfdfe)'
@@ -229,6 +253,6 @@ module.exports = {
         apply: 'text-(#141619) bg-(#d3d3d4) border-(#bcbebf)'
       }
     },
-    fontFamily: { mono: 'Courier' }
+    fontFamily: { mono: 'FiraCode-Regular' }
   }
 }
