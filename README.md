@@ -44,6 +44,8 @@ A free, high-quality, open-source icon library with over 2,000 icons. The origin
 
 **We've converted the original `.woff` font file to `.ttf` for use in any Titanium mobile app.**
 
+Here's the [Font File](app/assets/fonts/bootstrap-icons.ttf), the [Styles file](purgetss/styles/fonts.tss), and the [Commond-JS](app/lib/purgetss.fonts.js) file.
+
 In the `Icons` tab, click on any of the icons to view an example code and see the class name.
 
 <p align="center" width="100%">
