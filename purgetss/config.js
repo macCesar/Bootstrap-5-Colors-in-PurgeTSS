@@ -186,7 +186,7 @@ module.exports = {
     },
     TabGroup: {
       default: {
-        apply: 'portrait tabs-bg-indigo-500 active-title-white active-tint-white'
+        apply: 'tabs-bg-indigo-500 active-title-white active-tint-white'
       },
       ios: {
         apply: 'title-indigo-100 tint-indigo-100'
