@@ -4,7 +4,7 @@ let selectedIcon
 let keyValueArray
 let currentPage = 0
 let isLoading = false
-let fontClasses = require('fonts').classes
+let fontClasses = require('purgetss.fonts').icons.bi
 const invertedIconObject = {}
 
 const font = require('purgetss.fonts')

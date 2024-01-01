@@ -1,12 +1,12 @@
-// PurgeTSS v6.2.39
+// PurgeTSS v6.2.43
 // Created by César Estrada
-// https://github.com/macCesar/purgeTSS
+// https://purgetss.com
 
 // Ti Elements
 'Label': { color: '#212529', textColor: '#212529', font: { fontFamily: 'MavenPro-Regular', fontSize: 16 } }
 'ScrollView': { contentHeight: Ti.UI.SIZE, contentWidth: Ti.UI.FILL }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
-'TabGroup': { activeTintColor: '#FFFFFF', activeTitleColor: '#FFFFFF', orientationModes: [ Ti.UI.PORTRAIT ], tabsBackgroundColor: '#6610f2' }
+'TabGroup': { activeTintColor: '#FFFFFF', activeTitleColor: '#FFFFFF', tabsBackgroundColor: '#6610f2' }
 'TabGroup[platform=android]': { autoTabTitle: true, shiftMode: 0, style: Ti.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION }
 'TabGroup[platform=ios]': { tint: '#e0cffc', titleColor: '#e0cffc' }
 'Tab[platform=android]': { backgroundFocusedColor: '#520dc2', titleColor: '#FFFFFF' }

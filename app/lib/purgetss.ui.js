@@ -1,3 +1,7 @@
+// PurgeTSS v6.2.43
+// Created by César Estrada
+// https://purgetss.com
+
 function Animation(args) {
   const param = {
     id: args.id,
@@ -38,7 +42,7 @@ function Animation(args) {
 
   // TODO: Create a library of useful animations!!
   animationView.play = (_views, _cb) => {
-    if (param.debug) { console.log('') }
+    if (param.debug) { console.log('') } // Just for debug
     logger('`play` method called on: ' + param.id);
     (param.playing) ? logger(`$.${param.view.id}: is playing...`) : mainPlayApplyFn(_views, _cb)
   }
@@ -46,27 +50,21 @@ function Animation(args) {
   animationView.toggle = animationView.play
 
   animationView.apply = (_views, _cb) => {
-    if (param.debug) { console.log('') }
+    if (param.debug) { console.log('') } // Just for debug
     logger('`apply` method called on: ' + param.id)
     mainPlayApplyFn(_views, _cb, 'apply')
   }
 
   animationView.draggable = (_views) => {
-    if (param.debug) { console.log('') }
+    if (param.debug) { console.log('') } // Just for debug
     logger('`draggable` method called on: ' + param.id)
     if (Array.isArray(_views)) {
       _views.forEach((_view, key) => {
         _view.zIndex = key
-        if (OS_IOS) {
-          draggableIOS(_view)
-        } else {
-          draggableANDROID(_view)
-        }
+        draggable(_view)
       })
-    } else if (OS_IOS) {
-      draggableIOS(_views)
     } else {
-      draggableANDROID(_views)
+      draggable(_views)
     }
   }
 
@@ -89,142 +87,128 @@ function Animation(args) {
     }
   }
 
-  function draggableANDROID(_view) {
-    if (_view) {
+  function draggable(draggableView) {
+    if (draggableView) {
       logger('   -> `draggable` helper')
 
       let offsetX, offsetY
 
       if (args.bounds) {
-        _view.bounds = (_view.bounds) ? { ...args.bounds, ..._view.bounds } : args.bounds
+        draggableView.bounds = (draggableView.bounds) ? { ...args.bounds, ...draggableView.bounds } : args.bounds
       }
 
-      param.draggables.push(_view)
+      draggableView.addEventListener('touchstart', event => {
+        offsetX = event.x
+        offsetY = event.y
 
-      Ti.Gesture.addEventListener('orientationchange', () => {
-        if (OS_ANDROID) {
-          setTimeout(() => {
-            checkBoundaries(_view)
-          }, 1000)
-        } else { checkBoundaries(_view) }
-      })
-
-      _view.addEventListener('touchstart', function(e) {
-        offsetX = e.x
-        offsetY = e.y
-
-        param.draggables.push(param.draggables.splice(realSourceView(e.source).zIndex, 1)[0])
-
+        param.draggables.push(param.draggables.splice(realSourceView(event.source).zIndex, 1)[0])
         param.draggables.forEach((draggable, key) => { draggable.zIndex = key })
 
-        checkDraggable(_view, 'drag')
+        checkDraggable(draggableView, 'drag')
       })
 
-      _view.addEventListener('touchend', () => {
-        checkDraggable(_view, 'drop')
+      draggableView.addEventListener('touchend', () => {
+        checkDraggable(draggableView, 'drop')
       })
 
-      _view.addEventListener('touchmove', function(e) {
-        if (!e.source.transform && !param.hasTransformation && !_view.transform) {
-          const convertedPoint = _view.convertPointToView({ x: e.x, y: e.y }, _view.parent)
+      if (OS_IOS) {
+        draggableView.addEventListener('touchmove', event => {
+          const parentViewRect = draggableView.parent.rect
+          const convertedPoint = draggableView.convertPointToView({ x: event.x, y: event.y }, draggableView.parent)
 
           let top = Math.round(convertedPoint.y - offsetY)
           let left = Math.round(convertedPoint.x - offsetX)
 
-          if (_view.bounds) {
-            if (_view.bounds.top !== undefined && top < _view.bounds.top) {
-              top = _view.bounds.top
+          if (draggableView.bounds) {
+            if (draggableView.bounds.top !== undefined && top < draggableView.bounds.top) {
+              top = draggableView.bounds.top
             }
-            if (_view.bounds.left !== undefined && left < _view.bounds.left) {
-              left = _view.bounds.left
+            if (draggableView.bounds.left !== undefined && left < draggableView.bounds.left) {
+              left = draggableView.bounds.left
             }
-            if (_view.bounds.right !== undefined && left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) {
-              left = _view.parent.rect.width - _view.rect.width - _view.bounds.right
+            if (draggableView.bounds.right !== undefined && left > parentViewRect.width - draggableView.rect.width - draggableView.bounds.right) {
+              left = parentViewRect.width - draggableView.rect.width - draggableView.bounds.right
             }
-            if (_view.bounds.bottom !== undefined && top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) {
-              top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom
+            if (draggableView.bounds.bottom !== undefined && top > parentViewRect.height - draggableView.rect.height - draggableView.bounds.bottom) {
+              top = parentViewRect.height - draggableView.rect.height - draggableView.bounds.bottom
             }
           }
 
-          const moveValues = { top, left, duration: 0 }
+          let x = left - parentViewRect.width / 2 + draggableView.rect.width / 2
+          let y = top - parentViewRect.height / 2 + draggableView.rect.height / 2
 
-          if (_view.constraint === 'vertical') {
-            delete moveValues.left
-          } else if (_view.constraint === 'horizontal') {
-            delete moveValues.top
+          if (draggableView.left) {
+            x = left - draggableView.left
+          } else if (draggableView.right) {
+            x = left - (parentViewRect.width - draggableView.right - draggableView.rect.width)
           }
 
-          if (param.moveByProperties) {
-            _view.applyProperties(moveValues)
-          } else {
-            _view.animate(moveValues)
+          if (draggableView.top) {
+            y = top - draggableView.top
+          } else if (draggableView.bottom) {
+            y = top - (parentViewRect.height - draggableView.bottom - draggableView.rect.height)
           }
-        }
-      })
-    } else {
-      notFound()
-    }
-  }
 
-  function draggableIOS(_view) {
-    if (_view) {
-      logger('   -> `draggable` helper')
+          if (draggableView.constraint === 'vertical') {
+            x = 0
+          } else if (draggableView.constraint === 'horizontal') {
+            y = 0
+          }
 
-      let offsetX, offsetY
+          draggableView.applyProperties({ duration: 0, transform: Ti.UI.createMatrix2D().translate(x, y) })
+        })
 
-      if (args.bounds) {
-        _view.bounds = (_view.bounds) ? { ...args.bounds, ..._view.bounds } : args.bounds
+        Ti.Gesture.addEventListener('orientationchange', () => {
+          checkBoundaries(draggableView)
+        })
+      } else {
+        draggableView.addEventListener('touchmove', event => {
+          if (!event.source.transform && !param.hasTransformation && !draggableView.transform) {
+            const convertedPoint = draggableView.convertPointToView({ x: event.x, y: event.y }, draggableView.parent)
+
+            let top = Math.round(convertedPoint.y - offsetY)
+            let left = Math.round(convertedPoint.x - offsetX)
+
+            if (draggableView.bounds) {
+              if (draggableView.bounds.top !== undefined && top < draggableView.bounds.top) {
+                top = draggableView.bounds.top
+              }
+              if (draggableView.bounds.left !== undefined && left < draggableView.bounds.left) {
+                left = draggableView.bounds.left
+              }
+              if (draggableView.bounds.right !== undefined && left > draggableView.parent.rect.width - draggableView.rect.width - draggableView.bounds.right) {
+                left = draggableView.parent.rect.width - draggableView.rect.width - draggableView.bounds.right
+              }
+              if (draggableView.bounds.bottom !== undefined && top > draggableView.parent.rect.height - draggableView.rect.height - draggableView.bounds.bottom) {
+                top = draggableView.parent.rect.height - draggableView.rect.height - draggableView.bounds.bottom
+              }
+            }
+
+            const moveValues = { top, left, duration: 0 }
+
+            if (draggableView.constraint === 'vertical') {
+              delete moveValues.left
+            } else if (draggableView.constraint === 'horizontal') {
+              delete moveValues.top
+            }
+
+            if (param.moveByProperties) {
+              draggableView.applyProperties(moveValues)
+            } else {
+              draggableView.animate(moveValues)
+            }
+          }
+        })
+
+        Ti.Gesture.addEventListener('orientationchange', () => {
+          const BOUNDARY_CHECK_DELAY = 1000
+          setTimeout(() => {
+            checkBoundaries(draggableView)
+          }, BOUNDARY_CHECK_DELAY)
+        })
       }
 
-      param.draggables.push(_view)
-
-      _view.addEventListener('touchstart', function(e) {
-        offsetX = e.x
-        offsetY = e.y
-
-        param.draggables.push(param.draggables.splice(realSourceView(e.source).zIndex, 1)[0])
-        param.draggables.forEach((draggable, key) => {
-          draggable.zIndex = key
-        })
-      })
-
-      _view.addEventListener('touchmove', function(e) {
-        const parentViewRect = _view.parent.rect
-        const convertedPoint = _view.convertPointToView({ x: e.x, y: e.y }, _view.parent)
-
-        let top = Math.round(convertedPoint.y - offsetY)
-        let left = Math.round(convertedPoint.x - offsetX)
-
-        if (_view.bounds) {
-          if (_view.bounds.top !== undefined && top < _view.bounds.top) {
-            top = _view.bounds.top
-          }
-
-          if (_view.bounds.left !== undefined && left < _view.bounds.left) {
-            left = _view.bounds.left
-          }
-
-          if (_view.bounds.right !== undefined && left > parentViewRect.width - _view.rect.width - _view.bounds.right) {
-            left = parentViewRect.width - _view.rect.width - _view.bounds.right
-          }
-
-          if (_view.bounds.bottom !== undefined && top > parentViewRect.height - _view.rect.height - _view.bounds.bottom) {
-            top = parentViewRect.height - _view.rect.height - _view.bounds.bottom
-          }
-
-        }
-
-        let x = left - parentViewRect.width / 2 + _view.rect.width / 2
-        let y = top - parentViewRect.height / 2 + _view.rect.height / 2
-
-        if (_view.constraint === 'vertical') {
-          x = 0
-        } else if (_view.constraint === 'horizontal') {
-          y = 0
-        }
-
-        _view.applyProperties({ duration: 0, transform: Ti.UI.createMatrix2D().translate(x, y) })
-      })
+      param.draggables.push(draggableView)
     } else {
       notFound()
     }
@@ -259,6 +243,7 @@ function Animation(args) {
       if (_view.bounds.right !== undefined && _view.left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) {
         _view.left = _view.parent.rect.width - _view.rect.width - _view.bounds.right
       }
+
       if (_view.bounds.bottom !== undefined && _view.top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) {
         _view.top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom
       }
@@ -283,7 +268,7 @@ function Animation(args) {
     if (param.debug || forceLog) { console.warn(`::ti.animation:: ${_message}`) }
   }
 
-  function notFound(source) {
+  function notFound() {
     console.error('The provided target can’t be found!')
   }
 
@@ -321,15 +306,13 @@ function Animation(args) {
       logger('   -> `animate` View')
       param.view = view
       param.playing = true
-      view.animate(Ti.UI.createAnimation(args), e => {
+      view.animate(Ti.UI.createAnimation(args), event => {
         checkComplete(view, action);
 
         // eslint-disable-next-line no-unused-expressions
         (typeof _cb === 'function')
-          ? _cb(e)
-          : e => {
-            logger('Animation complete on object: ' + JSON.stringify(args))
-          }
+          ? _cb(event)
+          : logger('Animation complete on object: ' + JSON.stringify(args))
 
         param.playing = false
       })
@@ -366,7 +349,9 @@ function Animation(args) {
       if (param.open && child.animationProperties && child.animationProperties.open) {
         if (_action === 'play') {
           child.animate(createAnimationObject(child, 'open'), () => {
-            if (child.animationProperties.complete) { child.animate(createAnimationObject(child, 'complete')) }
+            if (child.animationProperties.complete) {
+              child.animate(createAnimationObject(child, 'complete'))
+            }
           })
         } else {
           child.applyProperties({
@@ -425,4 +410,4 @@ function deviceInfo() {
 }
 exports.deviceInfo = deviceInfo
 
-exports.createAnimation = (args) => { return new Animation(args) }
+exports.createAnimation = args => new Animation(args)
