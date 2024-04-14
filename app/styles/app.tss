@@ -217,6 +217,7 @@
 '.w-3': { width: 12 }
 '.w-3/5': { width: '60%' }
 '.w-36': { width: 144 }
+'.w-40': { width: 160 }
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-full': { width: '100%' }
 '.w-screen': { width: Ti.UI.FILL }
@@ -246,24 +247,12 @@
 '.bounds:m-2': { bounds: { top: 8, right: 8, bottom: 8, left: 8 } }
 
 // Color Opacity Modifiers
-'.bg-dark/50': { backgroundColor: '#80212529' }
-'.bg-gray-500/50': { backgroundColor: '#80adb5bd' }
-'.bg-gray-500/80': { backgroundColor: '#ccadb5bd' }
-'.bg-gray-500/90': { backgroundColor: '#e6adb5bd' }
-'.bg-gray-700/50': { backgroundColor: '#80495057' }
-'.bg-gray-700/80': { backgroundColor: '#cc495057' }
-'.bg-gray-700/90': { backgroundColor: '#e6495057' }
+'.bg-dark/75': { backgroundColor: '#bf212529' }
 '.bg-gray-900/50': { backgroundColor: '#80212529' }
 '.bg-gray-900/80': { backgroundColor: '#cc212529' }
 '.bg-gray-900/90': { backgroundColor: '#e6212529' }
 '.bg-white/50': { backgroundColor: '#80FFFFFF' }
-'.bg-white/80': { backgroundColor: '#ccFFFFFF' }
-'.bg-white/90': { backgroundColor: '#e6FFFFFF' }
-'.border-gray-500/90': { borderColor: '#e6adb5bd' }
-'.border-gray-700/90': { borderColor: '#e6495057' }
 '.border-gray-900/90': { borderColor: '#e6212529' }
-'.border-white/90': { borderColor: '#e6FFFFFF' }
-'.text-black/80': { color: '#cc000000', textColor: '#cc000000' }
 '.text-white/80': { color: '#ccffffff', textColor: '#ccffffff' }
 
 // Font Styles
@@ -278,6 +267,3 @@
 '.font-bold': { font: { fontFamily: 'MavenPro-Bold' } }
 '.font-regular': { font: { fontFamily: 'MavenPro-Regular' } }
 '.font-semibold': { font: { fontFamily: 'MavenPro-SemiBold' } }
-
-// Unused or unsupported classes
-// '.bg-black/50': { }

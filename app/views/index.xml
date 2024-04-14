@@ -11,7 +11,7 @@
           <Require src="components/colors/all" />
         </ScrollView>
 
-        <ActivityIndicator id="activityindicatorColors" class="style-activity-indicator-plain bg-dark/50 rounded-8 h-8 w-36 text-sm text-white" message="L('loading_colors')" />
+        <ActivityIndicator id="activityindicatorColors" class="style-activity-indicator-plain bg-dark/75 rounded-8 h-8 w-40 text-sm text-white" message="L('loading_colors')" />
       </Window>
     </Tab>
 
@@ -50,7 +50,7 @@
           <ScrollView id="theIconsScrollView" class="vertical show-vertical-scroll-indicator horizontal wh-screen android:scroll-type-vertical mt-2" onScroll="keepLoading">
             <View id="theIcons" class="vertical" onClick="showIcon" />
 
-            <Label id="activityindicator" class="style-activity-indicator-plain bg-dark/50 rounded-8 mb-4 h-8 w-36 text-center text-sm text-white" text="L('loading_icons')" />
+            <Label id="activityindicator" class="style-activity-indicator-plain bg-dark/75 rounded-8 mb-4 h-8 w-40 text-center text-sm text-white" text="L('loading_icons')" />
           </ScrollView>
         </View>
 
