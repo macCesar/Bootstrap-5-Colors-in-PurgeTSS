@@ -17,7 +17,7 @@
 
       <Label id="title" text="$.args.title" class="touch-enabled-false ml-16 mr-16 mt-1.5 h-auto text-sm font-bold text-white/80" />
 
-      <Label id="copy" if="$.args.copy" btn="copy" class="font-regular android:touch-feedback rounded-tr-3 mr-0 mt-0 h-8 w-16 bg-gray-900/80 text-center text-xs text-white/80" text="L('copy', 'Copy')" value="$.args.text" />
+      <Button id="copy" if="$.args.copy" btn="copy" class="font-regular android:touch-feedback rounded-tr-3 mr-0 mt-0 h-8 w-16 bg-gray-900/80 text-center text-xs text-white/80" title="L('copy', 'Copy')" value="$.args.text" />
     </View>
   </TikitCode>
 </Alloy>

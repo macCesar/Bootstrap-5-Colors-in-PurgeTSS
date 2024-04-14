@@ -1,10 +1,10 @@
-// Based on Tailwind CSS v3.4.0: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Based on Tailwind CSS v3.4.3: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 
 // Tailwind-like styles
 // Generated with PurgeTSS
 // https://purgetss.com
-// config.js file updated on: Wed Nov 29 2023 18:14:21 GMT-0600 (Central Standard Time)
+// config.js file updated on: Sun Apr 14 2024 17:14:34 GMT-0500 (Central Daylight Time)
 
 // Ti Elements
 // Property: View
@@ -1661,11 +1661,6 @@
 // Component(s): Ti.UI.ScrollView
 '.scroll-type-horizontal': { scrollType: 'horizontal' }
 '.scroll-type-vertical': { scrollType: 'vertical' }
-
-// Property(ies): selectionStyle
-// Component(s): Ti.UI.ListItem, Ti.UI.TableViewRow
-'.selection-style': { selectionStyle: Ti.UI.SELECTION_STYLE_DEFAULT }
-'.selection-style-none': { selectionStyle: Ti.UI.SELECTION_STYLE_NONE }
 
 // Property(ies): showHorizontalScrollIndicator, showVerticalScrollIndicator
 // Component(s): Ti.UI.ScrollView

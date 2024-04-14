@@ -3,6 +3,7 @@
 // https://purgetss.com
 
 function Animation(args) {
+  args = args ?? {}
   const param = {
     id: args.id,
     open: false,
@@ -336,16 +337,16 @@ function Animation(args) {
       (typeof _cb === 'function')
         ? _cb()
         : () => {
-          logger('Animation complete on objects: ' + JSON.stringify(args))
-          param.playing = false
-        }
+            logger('Animation complete on objects: ' + JSON.stringify(args))
+            param.playing = false
+          }
     } else {
       notFound(args)
     }
   }
 
   function innerAnimations(_view, _action) {
-    _.each(_view.children, child => {
+    _view.children.forEach(child => {
       if (param.open && child.animationProperties && child.animationProperties.open) {
         if (_action === 'play') {
           child.animate(createAnimationObject(child, 'open'), () => {
