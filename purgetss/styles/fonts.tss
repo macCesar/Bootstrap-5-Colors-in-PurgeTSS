@@ -1,4 +1,4 @@
-// Fonts TSS file generated with PurgeTSS
+// Fonts TSS file generated with Purge TSS
 // https://purgetss.com/docs/commands#build-fonts-command
 
 /**
@@ -143,7 +143,7 @@
 // Unicode Characters
 // To use your Icon Fonts in Buttons AND Labels each class sets 'text' and 'title' properties
 
-// bootstrap-icons/bootstrap-icons.css
+// bootstrap-icons/bi.css
 '.bi-123': { text: '\uf67f', title: '\uf67f' }
 '.bi-alarm-fill': { text: '\uf101', title: '\uf101' }
 '.bi-alarm': { text: '\uf102', title: '\uf102' }
