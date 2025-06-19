@@ -10,7 +10,6 @@ module.exports = {
 
     // These options are passed directly to PurgeTSS
     options: {
-      legacy: false, // Generates & Purge tailwind.tss v5.x classes
       missing: true, // Report missing classes
       widgets: false, // Purge widgets too
       safelist: require('./safelist'), // Array of classes to keep
