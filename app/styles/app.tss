@@ -1,4 +1,4 @@
-// PurgeTSS v7.1.0
+// PurgeTSS v7.1.9
 // Created by César Estrada
 // https://purgetss.com
 
@@ -248,11 +248,7 @@
 
 // Color Opacity Modifiers
 '.bg-dark/75': { backgroundColor: '#bf212529' }
-'.bg-gray-900/50': { backgroundColor: '#80212529' }
-'.bg-gray-900/80': { backgroundColor: '#cc212529' }
-'.bg-gray-900/90': { backgroundColor: '#e6212529' }
 '.bg-white/50': { backgroundColor: '#80FFFFFF' }
-'.border-gray-900/90': { borderColor: '#e6212529' }
 '.text-white/80': { color: '#ccffffff', textColor: '#ccffffff' }
 
 // Font Styles
@@ -267,3 +263,9 @@
 '.font-bold': { font: { fontFamily: 'MavenPro-Bold' } }
 '.font-regular': { font: { fontFamily: 'MavenPro-Regular' } }
 '.font-semibold': { font: { fontFamily: 'MavenPro-SemiBold' } }
+
+// Unused or unsupported classes
+// '.bg-gray-950/50': { }
+// '.bg-gray-950/80': { }
+// '.bg-gray-950/90': { }
+// '.border-gray-950/90': { }
