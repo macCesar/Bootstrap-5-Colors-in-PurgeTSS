@@ -4,7 +4,7 @@
 // Tailwind-like styles
 // Generated with PurgeTSS
 // https://purgetss.com
-// config.js file updated on: Thu Jun 19 2025 17:17:19 GMT-0500 (hora de verano central)
+// config.js file updated on: Tue Jul 08 2025 19:13:30 GMT-0500 (hora de verano central)
 
 // Ti Elements
 // Property: View
@@ -3146,6 +3146,7 @@
 '.from-gray-700': { backgroundGradient: { colors: [ '#00495057', '#495057' ] } }
 '.from-gray-800': { backgroundGradient: { colors: [ '#00343a40', '#343a40' ] } }
 '.from-gray-900': { backgroundGradient: { colors: [ '#00212529', '#212529' ] } }
+'.from-gray-950': { backgroundGradient: { colors: [ '#00121416', '#121416' ] } }
 '.from-gray': { backgroundGradient: { colors: [ '#00adb5bd', '#adb5bd' ] } }
 
 // Property(ies): backgroundGradient: colors - To Color
@@ -3269,6 +3270,7 @@
 '.to-gray-700': { backgroundGradient: { colors: [ '#495057' ] } }
 '.to-gray-800': { backgroundGradient: { colors: [ '#343a40' ] } }
 '.to-gray-900': { backgroundGradient: { colors: [ '#212529' ] } }
+'.to-gray-950': { backgroundGradient: { colors: [ '#121416' ] } }
 '.to-gray': { backgroundGradient: { colors: [ '#adb5bd' ] } }
 
 // Property(ies): backgroundSelectedGradient: colors - From Color - iOS Only
@@ -3392,6 +3394,7 @@
 '.bg-selected-from-gray-700': { backgroundSelectedGradient: { colors: [ '#00495057', '#495057' ] } }
 '.bg-selected-from-gray-800': { backgroundSelectedGradient: { colors: [ '#00343a40', '#343a40' ] } }
 '.bg-selected-from-gray-900': { backgroundSelectedGradient: { colors: [ '#00212529', '#212529' ] } }
+'.bg-selected-from-gray-950': { backgroundSelectedGradient: { colors: [ '#00121416', '#121416' ] } }
 '.bg-selected-from-gray': { backgroundSelectedGradient: { colors: [ '#00adb5bd', '#adb5bd' ] } }
 
 // Property(ies): backgroundSelectedGradient: colors - To Color - iOS Only
@@ -3515,6 +3518,7 @@
 '.bg-selected-to-gray-700': { backgroundSelectedGradient: { colors: [ '#495057' ] } }
 '.bg-selected-to-gray-800': { backgroundSelectedGradient: { colors: [ '#343a40' ] } }
 '.bg-selected-to-gray-900': { backgroundSelectedGradient: { colors: [ '#212529' ] } }
+'.bg-selected-to-gray-950': { backgroundSelectedGradient: { colors: [ '#121416' ] } }
 '.bg-selected-to-gray': { backgroundSelectedGradient: { colors: [ '#adb5bd' ] } }
 
 // Property(ies): color
@@ -3638,6 +3642,7 @@
 '.text-gray-700': { color: '#495057', textColor: '#495057' }
 '.text-gray-800': { color: '#343a40', textColor: '#343a40' }
 '.text-gray-900': { color: '#212529', textColor: '#212529' }
+'.text-gray-950': { color: '#121416', textColor: '#121416' }
 '.text-gray': { color: '#adb5bd', textColor: '#adb5bd' }
 '.text-black': { color: '#000000', textColor: '#000000' }
 '.text-body': { color: '#212529', textColor: '#212529' }
@@ -3766,6 +3771,7 @@
 '.placeholder-gray-700': { hintTextColor: '#495057' }
 '.placeholder-gray-800': { hintTextColor: '#343a40' }
 '.placeholder-gray-900': { hintTextColor: '#212529' }
+'.placeholder-gray-950': { hintTextColor: '#121416' }
 '.placeholder-gray': { hintTextColor: '#adb5bd' }
 
 // Property(ies): tintColor
@@ -3889,6 +3895,7 @@
 '.tint-color-gray-700': { tintColor: '#495057' }
 '.tint-color-gray-800': { tintColor: '#343a40' }
 '.tint-color-gray-900': { tintColor: '#212529' }
+'.tint-color-gray-950': { tintColor: '#121416' }
 '.tint-color-gray': { tintColor: '#adb5bd' }
 
 // Property(ies): titleAttributes: color - iOS Only
@@ -4012,6 +4019,7 @@
 '.title-attributes-gray-700': { titleAttributes: { color: '#495057' } }
 '.title-attributes-gray-800': { titleAttributes: { color: '#343a40' } }
 '.title-attributes-gray-900': { titleAttributes: { color: '#212529' } }
+'.title-attributes-gray-950': { titleAttributes: { color: '#121416' } }
 '.title-attributes-gray': { titleAttributes: { color: '#adb5bd' } }
 
 // Property(ies): titleAttributes: shadow - iOS Only
@@ -4135,6 +4143,7 @@
 '.title-attributes-shadow-gray-700': { titleAttributes: { shadow: { color: '#495057' } } }
 '.title-attributes-shadow-gray-800': { titleAttributes: { shadow: { color: '#343a40' } } }
 '.title-attributes-shadow-gray-900': { titleAttributes: { shadow: { color: '#212529' } } }
+'.title-attributes-shadow-gray-950': { titleAttributes: { shadow: { color: '#121416' } } }
 '.title-attributes-shadow-gray': { titleAttributes: { shadow: { color: '#adb5bd' } } }
 
 // Property: bubbleParent
@@ -4276,6 +4285,7 @@
 '.bg-gray-700': { backgroundColor: '#495057' }
 '.bg-gray-800': { backgroundColor: '#343a40' }
 '.bg-gray-900': { backgroundColor: '#212529' }
+'.bg-gray-950': { backgroundColor: '#121416' }
 '.bg-gray': { backgroundColor: '#adb5bd' }
 
 // Property: backgroundDisabledColor
@@ -4400,6 +4410,7 @@
 '.bg-disabled-gray-700': { backgroundDisabledColor: '#495057' }
 '.bg-disabled-gray-800': { backgroundDisabledColor: '#343a40' }
 '.bg-disabled-gray-900': { backgroundDisabledColor: '#212529' }
+'.bg-disabled-gray-950': { backgroundDisabledColor: '#121416' }
 '.bg-disabled-gray': { backgroundDisabledColor: '#adb5bd' }
 
 // Property: backgroundFocusedColor
@@ -4523,6 +4534,7 @@
 '.bg-focused-gray-700': { backgroundFocusedColor: '#495057' }
 '.bg-focused-gray-800': { backgroundFocusedColor: '#343a40' }
 '.bg-focused-gray-900': { backgroundFocusedColor: '#212529' }
+'.bg-focused-gray-950': { backgroundFocusedColor: '#121416' }
 '.bg-focused-gray': { backgroundFocusedColor: '#adb5bd' }
 
 // Property: backgroundRepeat
@@ -4691,6 +4703,7 @@
 '.bg-selected-gray-700': { backgroundSelectedColor: '#495057' }
 '.bg-selected-gray-800': { backgroundSelectedColor: '#343a40' }
 '.bg-selected-gray-900': { backgroundSelectedColor: '#212529' }
+'.bg-selected-gray-950': { backgroundSelectedColor: '#121416' }
 '.bg-selected-gray': { backgroundSelectedColor: '#adb5bd' }
 
 // Property: backgroundTopCap
@@ -4854,6 +4867,7 @@
 '.border-gray-700': { borderColor: '#495057' }
 '.border-gray-800': { borderColor: '#343a40' }
 '.border-gray-900': { borderColor: '#212529' }
+'.border-gray-950': { borderColor: '#121416' }
 '.border-gray': { borderColor: '#adb5bd' }
 
 // Property: borderRadius
@@ -5333,6 +5347,7 @@
 '.pull-bg-gray-700': { pullBackgroundColor: '#495057' }
 '.pull-bg-gray-800': { pullBackgroundColor: '#343a40' }
 '.pull-bg-gray-900': { pullBackgroundColor: '#212529' }
+'.pull-bg-gray-950': { pullBackgroundColor: '#121416' }
 '.pull-bg-gray': { pullBackgroundColor: '#adb5bd' }
 
 // Property: right
@@ -5646,6 +5661,7 @@
 '.touch-feedback-gray-700': { touchFeedbackColor: '#495057' }
 '.touch-feedback-gray-800': { touchFeedbackColor: '#343a40' }
 '.touch-feedback-gray-900': { touchFeedbackColor: '#212529' }
+'.touch-feedback-gray-950': { touchFeedbackColor: '#121416' }
 '.touch-feedback-gray': { touchFeedbackColor: '#adb5bd' }
 
 // Property: viewShadowColor
@@ -5770,6 +5786,7 @@
 '.view-shadow-gray-700': { viewShadowColor: '#495057' }
 '.view-shadow-gray-800': { viewShadowColor: '#343a40' }
 '.view-shadow-gray-900': { viewShadowColor: '#212529' }
+'.view-shadow-gray-950': { viewShadowColor: '#121416' }
 '.view-shadow-gray': { viewShadowColor: '#adb5bd' }
 
 // Property: visible
@@ -6176,6 +6193,7 @@
 '.colors-gray-700': { colors: '#495057' }
 '.colors-gray-800': { colors: '#343a40' }
 '.colors-gray-900': { colors: '#212529' }
+'.colors-gray-950': { colors: '#121416' }
 '.colors-gray': { colors: '#adb5bd' }
 
 // Property: customInspect
@@ -6533,6 +6551,7 @@
 '.gray-700': { color: '#495057' }
 '.gray-800': { color: '#343a40' }
 '.gray-900': { color: '#212529' }
+'.gray-950': { color: '#121416' }
 '.gray': { color: '#adb5bd' }
 
 // Property: visibility
@@ -6696,6 +6715,7 @@
 '.light-gray-700': { lightColor: '#495057' }
 '.light-gray-800': { lightColor: '#343a40' }
 '.light-gray-900': { lightColor: '#212529' }
+'.light-gray-950': { lightColor: '#121416' }
 '.light-gray': { lightColor: '#adb5bd' }
 
 // Property: lockscreenVisibility
@@ -8299,6 +8319,7 @@
 '.indicator-gray-700': { indicatorColor: '#495057' }
 '.indicator-gray-800': { indicatorColor: '#343a40' }
 '.indicator-gray-900': { indicatorColor: '#212529' }
+'.indicator-gray-950': { indicatorColor: '#121416' }
 '.indicator-gray': { indicatorColor: '#adb5bd' }
 
 // Property: buttonClickRequired
@@ -8792,6 +8813,7 @@
 '.bar-gray-700': { barColor: '#495057' }
 '.bar-gray-800': { barColor: '#343a40' }
 '.bar-gray-900': { barColor: '#212529' }
+'.bar-gray-950': { barColor: '#121416' }
 '.bar-gray': { barColor: '#adb5bd' }
 
 // Property: contentScrimColor
@@ -8916,6 +8938,7 @@
 '.content-scrim-gray-700': { contentScrimColor: '#495057' }
 '.content-scrim-gray-800': { contentScrimColor: '#343a40' }
 '.content-scrim-gray-900': { contentScrimColor: '#212529' }
+'.content-scrim-gray-950': { contentScrimColor: '#121416' }
 '.content-scrim-gray': { contentScrimColor: '#adb5bd' }
 
 // Property: imageHeight
@@ -9107,6 +9130,7 @@
 '.navigation-icon-gray-700': { navigationIconColor: '#495057' }
 '.navigation-icon-gray-800': { navigationIconColor: '#343a40' }
 '.navigation-icon-gray-900': { navigationIconColor: '#212529' }
+'.navigation-icon-gray-950': { navigationIconColor: '#121416' }
 '.navigation-icon-gray': { navigationIconColor: '#adb5bd' }
 
 // Property: isLeftOpen
@@ -9432,6 +9456,7 @@
 '.hint-text-gray-700': { hintTextColor: '#495057' }
 '.hint-text-gray-800': { hintTextColor: '#343a40' }
 '.hint-text-gray-900': { hintTextColor: '#212529' }
+'.hint-text-gray-950': { hintTextColor: '#121416' }
 '.hint-text-gray': { hintTextColor: '#adb5bd' }
 
 // Property: iconified
@@ -10031,6 +10056,7 @@
 '.disabled-gray-700': { disabledColor: '#495057' }
 '.disabled-gray-800': { disabledColor: '#343a40' }
 '.disabled-gray-900': { disabledColor: '#212529' }
+'.disabled-gray-950': { disabledColor: '#121416' }
 '.disabled-gray': { disabledColor: '#adb5bd' }
 
 // Property: imageIsMask
@@ -10160,6 +10186,7 @@
 '.selected-gray-700': { selectedColor: '#495057' }
 '.selected-gray-800': { selectedColor: '#343a40' }
 '.selected-gray-900': { selectedColor: '#212529' }
+'.selected-gray-950': { selectedColor: '#121416' }
 '.selected-gray': { selectedColor: '#adb5bd' }
 
 // Property: shadowColor
@@ -10283,6 +10310,7 @@
 '.shadow-gray-700': { shadowColor: '#495057' }
 '.shadow-gray-800': { shadowColor: '#343a40' }
 '.shadow-gray-900': { shadowColor: '#212529' }
+'.shadow-gray-950': { shadowColor: '#121416' }
 '.shadow-gray': { shadowColor: '#adb5bd' }
 
 // Property: shadowRadius
@@ -10481,6 +10509,7 @@
 '.selected-text-gray-700': { selectedTextColor: '#495057' }
 '.selected-text-gray-800': { selectedTextColor: '#343a40' }
 '.selected-text-gray-900': { selectedTextColor: '#212529' }
+'.selected-text-gray-950': { selectedTextColor: '#121416' }
 '.selected-text-gray': { selectedTextColor: '#adb5bd' }
 
 // Property: selectedButtonColor
@@ -10605,6 +10634,7 @@
 '.selected-button-gray-700': { selectedButtonColor: '#495057' }
 '.selected-button-gray-800': { selectedButtonColor: '#343a40' }
 '.selected-button-gray-900': { selectedButtonColor: '#212529' }
+'.selected-button-gray-950': { selectedButtonColor: '#121416' }
 '.selected-button-gray': { selectedButtonColor: '#adb5bd' }
 
 // Property: unique
@@ -10811,6 +10841,7 @@
 '.image-touch-feedback-gray-700': { imageTouchFeedbackColor: '#495057' }
 '.image-touch-feedback-gray-800': { imageTouchFeedbackColor: '#343a40' }
 '.image-touch-feedback-gray-900': { imageTouchFeedbackColor: '#212529' }
+'.image-touch-feedback-gray-950': { imageTouchFeedbackColor: '#121416' }
 '.image-touch-feedback-gray': { imageTouchFeedbackColor: '#adb5bd' }
 
 // Property: preventDefaultImage
@@ -11151,6 +11182,7 @@
 '.highlighted-gray-700': { highlightedColor: '#495057' }
 '.highlighted-gray-800': { highlightedColor: '#343a40' }
 '.highlighted-gray-900': { highlightedColor: '#212529' }
+'.highlighted-gray-950': { highlightedColor: '#121416' }
 '.highlighted-gray': { highlightedColor: '#adb5bd' }
 
 // Property: breakStrategy
@@ -11402,6 +11434,7 @@
 '.selected-bg-gray-700': { selectedBackgroundColor: '#495057' }
 '.selected-bg-gray-800': { selectedBackgroundColor: '#343a40' }
 '.selected-bg-gray-900': { selectedBackgroundColor: '#212529' }
+'.selected-bg-gray-950': { selectedBackgroundColor: '#121416' }
 '.selected-bg-gray': { selectedBackgroundColor: '#adb5bd' }
 
 // Property: canEdit
@@ -11544,6 +11577,7 @@
 '.subtitle-gray-700': { subtitleColor: '#495057' }
 '.subtitle-gray-800': { subtitleColor: '#343a40' }
 '.subtitle-gray-900': { subtitleColor: '#212529' }
+'.subtitle-gray-950': { subtitleColor: '#121416' }
 '.subtitle-gray': { subtitleColor: '#adb5bd' }
 
 // Property: selectedSubtitleColor
@@ -11668,6 +11702,7 @@
 '.selected-subtitle-gray-700': { selectedSubtitleColor: '#495057' }
 '.selected-subtitle-gray-800': { selectedSubtitleColor: '#343a40' }
 '.selected-subtitle-gray-900': { selectedSubtitleColor: '#212529' }
+'.selected-subtitle-gray-950': { selectedSubtitleColor: '#121416' }
 '.selected-subtitle-gray': { selectedSubtitleColor: '#adb5bd' }
 
 // Property: selectionStyle
@@ -12006,6 +12041,7 @@
 '.separator-gray-700': { separatorColor: '#495057' }
 '.separator-gray-800': { separatorColor: '#343a40' }
 '.separator-gray-900': { separatorColor: '#212529' }
+'.separator-gray-950': { separatorColor: '#121416' }
 '.separator-gray': { separatorColor: '#adb5bd' }
 
 // Property: separatorStyle
@@ -12148,6 +12184,7 @@
 '.results-bg-gray-700': { resultsBackgroundColor: '#495057' }
 '.results-bg-gray-800': { resultsBackgroundColor: '#343a40' }
 '.results-bg-gray-900': { resultsBackgroundColor: '#212529' }
+'.results-bg-gray-950': { resultsBackgroundColor: '#121416' }
 '.results-bg-gray': { resultsBackgroundColor: '#adb5bd' }
 
 // Property: resultsSeparatorColor
@@ -12272,6 +12309,7 @@
 '.results-separator-gray-700': { resultsSeparatorColor: '#495057' }
 '.results-separator-gray-800': { resultsSeparatorColor: '#343a40' }
 '.results-separator-gray-900': { resultsSeparatorColor: '#212529' }
+'.results-separator-gray-950': { resultsSeparatorColor: '#121416' }
 '.results-separator-gray': { resultsSeparatorColor: '#adb5bd' }
 
 // Property: resultsSeparatorStyle
@@ -12419,6 +12457,7 @@
 '.tint-gray-700': { tint: '#495057' }
 '.tint-gray-800': { tint: '#343a40' }
 '.tint-gray-900': { tint: '#212529' }
+'.tint-gray-950': { tint: '#121416' }
 '.tint-gray': { tint: '#adb5bd' }
 
 // Property: scale
@@ -12684,6 +12723,7 @@
 '.status-bar-gray-700': { statusBarColor: '#495057' }
 '.status-bar-gray-800': { statusBarColor: '#343a40' }
 '.status-bar-gray-900': { statusBarColor: '#212529' }
+'.status-bar-gray-950': { statusBarColor: '#121416' }
 '.status-bar-gray': { statusBarColor: '#adb5bd' }
 
 // Property: sustainedPerformanceMode
@@ -13056,6 +13096,7 @@
 '.selected-border-gray-700': { selectedBorderColor: '#495057' }
 '.selected-border-gray-800': { selectedBorderColor: '#343a40' }
 '.selected-border-gray-900': { selectedBorderColor: '#212529' }
+'.selected-border-gray-950': { selectedBorderColor: '#121416' }
 '.selected-border-gray': { selectedBorderColor: '#adb5bd' }
 
 // Property: opaquebackground
@@ -13222,6 +13263,7 @@
 '.date-time-gray-700': { dateTimeColor: '#495057' }
 '.date-time-gray-800': { dateTimeColor: '#343a40' }
 '.date-time-gray-900': { dateTimeColor: '#212529' }
+'.date-time-gray-950': { dateTimeColor: '#121416' }
 '.date-time-gray': { dateTimeColor: '#adb5bd' }
 
 // Property: overrideUserInterfaceStyle
@@ -13397,6 +13439,7 @@
 '.track-tint-gray-700': { trackTintColor: '#495057' }
 '.track-tint-gray-800': { trackTintColor: '#343a40' }
 '.track-tint-gray-900': { trackTintColor: '#212529' }
+'.track-tint-gray-950': { trackTintColor: '#121416' }
 '.track-tint-gray': { trackTintColor: '#adb5bd' }
 
 // Property: canCancelEvents
@@ -13720,6 +13763,7 @@
 '.current-page-indicator-gray-700': { currentPageIndicatorColor: '#495057' }
 '.current-page-indicator-gray-800': { currentPageIndicatorColor: '#343a40' }
 '.current-page-indicator-gray-900': { currentPageIndicatorColor: '#212529' }
+'.current-page-indicator-gray-950': { currentPageIndicatorColor: '#121416' }
 '.current-page-indicator-gray': { currentPageIndicatorColor: '#adb5bd' }
 
 // Property: pagingControlColor
@@ -13844,6 +13888,7 @@
 '.paging-control-gray-700': { pagingControlColor: '#495057' }
 '.paging-control-gray-800': { pagingControlColor: '#343a40' }
 '.paging-control-gray-900': { pagingControlColor: '#212529' }
+'.paging-control-gray-950': { pagingControlColor: '#121416' }
 '.paging-control-gray': { pagingControlColor: '#adb5bd' }
 
 // Property: pagingControlHeight
@@ -14007,6 +14052,7 @@
 '.page-indicator-gray-700': { pageIndicatorColor: '#495057' }
 '.page-indicator-gray-800': { pageIndicatorColor: '#343a40' }
 '.page-indicator-gray-900': { pageIndicatorColor: '#212529' }
+'.page-indicator-gray-950': { pageIndicatorColor: '#121416' }
 '.page-indicator-gray': { pageIndicatorColor: '#adb5bd' }
 
 // Property: showPagingControl
@@ -14219,6 +14265,7 @@
 '.icon-gray-700': { iconColor: '#495057' }
 '.icon-gray-800': { iconColor: '#343a40' }
 '.icon-gray-900': { iconColor: '#212529' }
+'.icon-gray-950': { iconColor: '#121416' }
 '.icon-gray': { iconColor: '#adb5bd' }
 
 // Property: showBookmark
@@ -14516,6 +14563,7 @@
 '.on-thumb-gray-700': { onThumbColor: '#495057' }
 '.on-thumb-gray-800': { onThumbColor: '#343a40' }
 '.on-thumb-gray-900': { onThumbColor: '#212529' }
+'.on-thumb-gray-950': { onThumbColor: '#121416' }
 '.on-thumb-gray': { onThumbColor: '#adb5bd' }
 
 // Property: thumbColor
@@ -14639,6 +14687,7 @@
 '.thumb-gray-700': { thumbColor: '#495057' }
 '.thumb-gray-800': { thumbColor: '#343a40' }
 '.thumb-gray-900': { thumbColor: '#212529' }
+'.thumb-gray-950': { thumbColor: '#121416' }
 '.thumb-gray': { thumbColor: '#adb5bd' }
 
 // Property: onTintColor
@@ -14763,6 +14812,7 @@
 '.on-tint-gray-700': { onTintColor: '#495057' }
 '.on-tint-gray-800': { onTintColor: '#343a40' }
 '.on-tint-gray-900': { onTintColor: '#212529' }
+'.on-tint-gray-950': { onTintColor: '#121416' }
 '.on-tint-gray': { onTintColor: '#adb5bd' }
 
 // Property: thumbTintColor
@@ -14887,6 +14937,7 @@
 '.thumb-tint-gray-700': { thumbTintColor: '#495057' }
 '.thumb-tint-gray-800': { thumbTintColor: '#343a40' }
 '.thumb-tint-gray-900': { thumbTintColor: '#212529' }
+'.thumb-tint-gray-950': { thumbTintColor: '#121416' }
 '.thumb-tint-gray': { thumbTintColor: '#adb5bd' }
 
 // Property: active
@@ -15016,6 +15067,7 @@
 '.badge-gray-700': { badgeColor: '#495057' }
 '.badge-gray-800': { badgeColor: '#343a40' }
 '.badge-gray-900': { badgeColor: '#212529' }
+'.badge-gray-950': { badgeColor: '#121416' }
 '.badge-gray': { badgeColor: '#adb5bd' }
 
 // Property: badgeBackgroundColor
@@ -15140,6 +15192,7 @@
 '.badge-bg-gray-700': { badgeBackgroundColor: '#495057' }
 '.badge-bg-gray-800': { badgeBackgroundColor: '#343a40' }
 '.badge-bg-gray-900': { badgeBackgroundColor: '#212529' }
+'.badge-bg-gray-950': { badgeBackgroundColor: '#121416' }
 '.badge-bg-gray': { badgeBackgroundColor: '#adb5bd' }
 
 // Property: badgeTextColor
@@ -15264,6 +15317,7 @@
 '.badge-text-gray-700': { badgeTextColor: '#495057' }
 '.badge-text-gray-800': { badgeTextColor: '#343a40' }
 '.badge-text-gray-900': { badgeTextColor: '#212529' }
+'.badge-text-gray-950': { badgeTextColor: '#121416' }
 '.badge-text-gray': { badgeTextColor: '#adb5bd' }
 
 // Property: iconIsMask
@@ -15399,6 +15453,7 @@
 '.active-tint-gray-700': { activeTintColor: '#495057' }
 '.active-tint-gray-800': { activeTintColor: '#343a40' }
 '.active-tint-gray-900': { activeTintColor: '#212529' }
+'.active-tint-gray-950': { activeTintColor: '#121416' }
 '.active-tint-gray': { activeTintColor: '#adb5bd' }
 
 // Property: titleColor
@@ -15523,6 +15578,7 @@
 '.title-gray-700': { titleColor: '#495057' }
 '.title-gray-800': { titleColor: '#343a40' }
 '.title-gray-900': { titleColor: '#212529' }
+'.title-gray-950': { titleColor: '#121416' }
 '.title-gray': { titleColor: '#adb5bd' }
 
 // Property: activeTitleColor
@@ -15647,6 +15703,7 @@
 '.active-title-gray-700': { activeTitleColor: '#495057' }
 '.active-title-gray-800': { activeTitleColor: '#343a40' }
 '.active-title-gray-900': { activeTitleColor: '#212529' }
+'.active-title-gray-950': { activeTitleColor: '#121416' }
 '.active-title-gray': { activeTitleColor: '#adb5bd' }
 
 // Property: hideShadow
@@ -15781,6 +15838,7 @@
 '.nav-tint-gray-700': { navTintColor: '#495057' }
 '.nav-tint-gray-800': { navTintColor: '#343a40' }
 '.nav-tint-gray-900': { navTintColor: '#212529' }
+'.nav-tint-gray-950': { navTintColor: '#121416' }
 '.nav-tint-gray': { navTintColor: '#adb5bd' }
 
 // Property: swipeToClose
@@ -15970,6 +16028,7 @@
 '.tabs-bg-gray-700': { tabsBackgroundColor: '#495057' }
 '.tabs-bg-gray-800': { tabsBackgroundColor: '#343a40' }
 '.tabs-bg-gray-900': { tabsBackgroundColor: '#212529' }
+'.tabs-bg-gray-950': { tabsBackgroundColor: '#121416' }
 '.tabs-bg-gray': { tabsBackgroundColor: '#adb5bd' }
 
 // Property: tabMode
@@ -16106,6 +16165,7 @@
 '.tabs-bg-selected-gray-700': { tabsBackgroundSelectedColor: '#495057' }
 '.tabs-bg-selected-gray-800': { tabsBackgroundSelectedColor: '#343a40' }
 '.tabs-bg-selected-gray-900': { tabsBackgroundSelectedColor: '#212529' }
+'.tabs-bg-selected-gray-950': { tabsBackgroundSelectedColor: '#121416' }
 '.tabs-bg-selected-gray': { tabsBackgroundSelectedColor: '#adb5bd' }
 
 // Property: tabBarVisible
@@ -16530,6 +16590,7 @@
 '.keyboard-toolbar-gray-700': { keyboardToolbarColor: '#495057' }
 '.keyboard-toolbar-gray-800': { keyboardToolbarColor: '#343a40' }
 '.keyboard-toolbar-gray-900': { keyboardToolbarColor: '#212529' }
+'.keyboard-toolbar-gray-950': { keyboardToolbarColor: '#121416' }
 '.keyboard-toolbar-gray': { keyboardToolbarColor: '#adb5bd' }
 
 // Property: keyboardToolbarHeight
@@ -16823,6 +16884,7 @@
 '.subtitle-text-gray-700': { subtitleTextColor: '#495057' }
 '.subtitle-text-gray-800': { subtitleTextColor: '#343a40' }
 '.subtitle-text-gray-900': { subtitleTextColor: '#212529' }
+'.subtitle-text-gray-950': { subtitleTextColor: '#121416' }
 '.subtitle-text-gray': { subtitleTextColor: '#adb5bd' }
 
 // Property: titleTextColor
@@ -16947,6 +17009,7 @@
 '.title-text-gray-700': { titleTextColor: '#495057' }
 '.title-text-gray-800': { titleTextColor: '#343a40' }
 '.title-text-gray-900': { titleTextColor: '#212529' }
+'.title-text-gray-950': { titleTextColor: '#121416' }
 '.title-text-gray': { titleTextColor: '#adb5bd' }
 
 // Property: statusBarHeight
@@ -17467,4 +17530,5 @@
 '.status-bar-bg-gray-700': { statusBarBackgroundColor: '#495057' }
 '.status-bar-bg-gray-800': { statusBarBackgroundColor: '#343a40' }
 '.status-bar-bg-gray-900': { statusBarBackgroundColor: '#212529' }
+'.status-bar-bg-gray-950': { statusBarBackgroundColor: '#121416' }
 '.status-bar-bg-gray': { statusBarBackgroundColor: '#adb5bd' }

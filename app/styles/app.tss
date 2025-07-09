@@ -248,7 +248,11 @@
 
 // Color Opacity Modifiers
 '.bg-dark/75': { backgroundColor: '#bf212529' }
+'.bg-gray-950/50': { backgroundColor: '#80121416' }
+'.bg-gray-950/80': { backgroundColor: '#cc121416' }
+'.bg-gray-950/90': { backgroundColor: '#e6121416' }
 '.bg-white/50': { backgroundColor: '#80FFFFFF' }
+'.border-gray-950/90': { borderColor: '#e6121416' }
 '.text-white/80': { color: '#ccffffff', textColor: '#ccffffff' }
 
 // Font Styles
@@ -263,9 +267,3 @@
 '.font-bold': { font: { fontFamily: 'MavenPro-Bold' } }
 '.font-regular': { font: { fontFamily: 'MavenPro-Regular' } }
 '.font-semibold': { font: { fontFamily: 'MavenPro-SemiBold' } }
-
-// Unused or unsupported classes
-// '.bg-gray-950/50': { }
-// '.bg-gray-950/80': { }
-// '.bg-gray-950/90': { }
-// '.border-gray-950/90': { }
